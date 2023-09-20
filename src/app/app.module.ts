@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddDoctorComponent } from './components/add-doctor/add-doctor.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { UpdateDoctorComponent } from './components/update-doctor/update-doctor.component';
+import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import { ViewDoctorComponent } from './components/view-doctor/view-doctor.component';
 
 @NgModule({
@@ -12,11 +14,14 @@ import { ViewDoctorComponent } from './components/view-doctor/view-doctor.compon
     AppComponent,
     AddDoctorComponent,
     NavbarComponent,
+    UpdateDoctorComponent,
     ViewDoctorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
