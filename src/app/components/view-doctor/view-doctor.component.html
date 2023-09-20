@@ -22,62 +22,17 @@
 
  
 
-        <tr>
+        <tr *ngFor="let doctor of doctors">
 
-            <th>1</th>
+            <th>{{doctor.DoctorId}}</th>
 
-            <th>John</th>
+            <th>{{doctor.DoctorName}}</th>
 
             <th>
-
-                <span class="action_btn">
-
-                    <a href="#">Edit Doctor Details</a>
-
-                </span>
+                <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
 
             </th>
 
         </tr>
-
- 
-
-        <tr>
-
-            <th>2</th>
-
-            <th>Alex</th>
-
-            <th>
-
-                <span class="action_btn">
-
-                    <a href="#">Edit Doctor Details</a>
-
-                </span>
-
-            </th>
-
-        </tr>
-
-        <tr>
-
-            <th>3</th>
-
-            <th>Ameer</th>
-
-            <th>
-
-                <span class="action_btn">
-
-                    <a href="#">Edit Doctor Details</a>
-
-                </span>
-
-            </th>
-
-        </tr>
-
- 
 
     </table>

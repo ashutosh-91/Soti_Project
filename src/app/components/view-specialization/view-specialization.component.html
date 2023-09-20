@@ -1,0 +1,38 @@
+<br>
+
+ 
+
+<br>
+
+<div class="container">
+
+    <h1 class="text-center"> View specialization </h1>
+
+    <table border="1" class="center">
+
+        <tr>
+
+            <th>specialization ID</th>
+
+            <th>specialization Name</th>
+
+            <th>Action</th>
+
+        </tr>
+
+ 
+
+        <tr *ngFor="let specialization of specializations">
+
+            <th>{{specialization.SpecializationCode}}</th>
+
+            <th>{{specialization.SpecializationName}}</th>
+
+            <th>
+                <button (click)="editspecialization(specialization)">View Doctors</button>
+
+            </th>
+
+        </tr>
+
+    </table>
