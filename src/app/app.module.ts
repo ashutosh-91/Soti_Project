@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddDoctorComponent } from './components/add-doctor/add-doctor.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { UpdateDoctorComponent } from './components/update-doctor/update-doctor.component';
+import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     AddDoctorComponent,
-    NavbarComponent
+    NavbarComponent,
+    UpdateDoctorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
