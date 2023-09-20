@@ -7,13 +7,15 @@ import { AddDoctorComponent } from './components/add-doctor/add-doctor.component
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UpdateDoctorComponent } from './components/update-doctor/update-doctor.component';
 import { FormsModule,ReactiveFormsModule } from "@angular/forms";
+import { ViewDoctorComponent } from './components/view-doctor/view-doctor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddDoctorComponent,
     NavbarComponent,
-    UpdateDoctorComponent
+    UpdateDoctorComponent,
+    ViewDoctorComponent
   ],
   imports: [
     BrowserModule,
