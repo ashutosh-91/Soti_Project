@@ -1,4 +1,4 @@
 export interface IDoctor{
-    doctorId:number,
-    doctorName:string
+    DoctorId:number,
+    DoctorName:string
 }
