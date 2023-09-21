@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-doctor.component.css']
 })
 export class AddDoctorComponent {
+  message: string = '';
+
+  displayMessage(){
+    this.message = 'Doctor successfully added'
+  }
 
 }

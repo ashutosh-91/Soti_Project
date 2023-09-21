@@ -8,7 +8,7 @@ import { ISpecialization } from 'src/app/models/specialization.model';
   styleUrls: ['./view-specialization.component.css']
 })
 export class ViewSpecializationComponent {
-  specializations:ISpecialization[]=[{SpecializationCode: 1,SpecializationName:"John"},{SpecializationCode: 2,SpecializationName:"Alex"},{SpecializationCode: 3,SpecializationName:"Ameer"}];
+  specializations:ISpecialization[]=[{SpecializationCode:"ANE" ,SpecializationName:"Anesthesilogoist"},{SpecializationCode: "CAR",SpecializationName:"Cardilogist"},{SpecializationCode: "GYN",SpecializationName:"Gnyyecologist"}];
   constructor( private router:Router){}
   editspecialization(doctor:any){
     this.router.navigate(['/doctors',doctor.SpecializationCode])
