@@ -12,6 +12,7 @@ import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import { ViewDoctorComponent } from './components/view-doctor/view-doctor.component';
 import { ViewSpecializationComponent } from './components/view-specialization/view-specialization.component';
 import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/view-todays-surgery.component';
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,13 +23,15 @@ import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/vie
     ViewDoctorComponent,
     ViewSpecializationComponent,
     ViewTodaysSurgeryComponent,
+    
     UpdateDoctorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
