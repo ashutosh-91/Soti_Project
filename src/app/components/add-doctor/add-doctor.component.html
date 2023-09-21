@@ -5,15 +5,20 @@
         <form>
             <div class="form-group row">
                 <label  class="col-md-4 col-form-label">Doctor Name</label>
-                <div class="col-md-8 p0">
+                <div class="col-md-8 pl-0">
                     <input type="text" class="form-control" >
                 </div>
             </div>
             <div class="form-group row text-left">
                 <label class="col-4"></label>
-                <button type="submit" class="btn btn-primary">Add Doctor</button>
-                <a href="#" class="centered-text">Cancel</a>
+                <button (click)="displayMessage()" type="submit" class="btn btn-primary">Add Doctor</button>
+                <a href="#" class="centered-text pt-2 pl-2">Cancel</a>
             </div>
+            <div class="form-group row text-left">
+                <label class="col-4"></label>
+                <div class="text-danger">{{message}}</div>
+            </div>
+            
         </form>
     </div>
 </section>
