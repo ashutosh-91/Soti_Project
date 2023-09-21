@@ -1,4 +1,4 @@
 export interface ISpecialization{
-    SpecializationCode:number,
+    SpecializationCode: string,
     SpecializationName:string
 }
