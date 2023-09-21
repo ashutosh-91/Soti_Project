@@ -41,7 +41,7 @@
             <div class="col-sm-4">
               <input type="text"  class="form-control" placeholder="End Time" formControlName="endTime" >
               <div *ngIf="endTime?.touched">
-                <div  class="text-center"*ngIf="endTime?.errors?.['timeError']  ">End Time should be less than End time</div>
+                <div  class="text-center"*ngIf="endTime?.errors?.['timeError']  ">End Time should be more than Start time</div>
               <div class="text-center" *ngIf="endTime?.errors?.['required']">End Time time is required</div>
               <div  class="text-center" *ngIf="endTime?.errors?.['max'] || endTime?.errors?.['min'] || endTime?.errors?.['pattern']">End time must be in 24H format</div>
             </div>
