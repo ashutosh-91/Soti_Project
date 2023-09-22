@@ -9,5 +9,6 @@ namespace project.Models
 
         }
         public DbSet<IDoctor> Doctors { get; set; }
+        public DbSet<Specialization> Specializations { get; set; }
     }
 }
