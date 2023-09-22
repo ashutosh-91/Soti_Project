@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IDoctor } from '../models/doctor.model';
+import { ISpecialization } from '../models/specialization.model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +18,8 @@ export class DataService {
   }
   addDoctor(doctor:any):any{
     return this.http.post('https://localhost:7170/api/Doctor',doctor);
+  }
+  getAllSpecializations():Observable<ISpecialization[]>{
+    return this.http.get<ISpecialization[]>('https://localhost:7170/api/Specialization');
   }
 }
