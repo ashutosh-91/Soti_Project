@@ -37,6 +37,22 @@ namespace project.Migrations
 
                     b.ToTable("Doctors");
                 });
+
+            modelBuilder.Entity("project.Models.Specialization", b =>
+                {
+                    b.Property<string>("SpecializationCode")
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)");
+
+                    b.Property<string>("SpecializationName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("SpecializationCode");
+
+                    b.ToTable("Specializations");
+                });
 #pragma warning restore 612, 618
         }
     }

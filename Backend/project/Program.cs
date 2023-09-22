@@ -11,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<DoctorRepository, DoctorRepositoryImpl>();
+builder.Services.AddTransient<SpecializationRepository, SpecializationRepositoryImpl>();
+
 builder.Services.AddDbContextPool<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("mydb"));
