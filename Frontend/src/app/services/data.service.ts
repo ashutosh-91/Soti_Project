@@ -12,4 +12,10 @@ export class DataService {
   getAllDoctors():Observable<IDoctor[]>{
     return this.http.get<IDoctor[]>('https://localhost:7170/api/Doctor');
   }
+  updateDoctor(doctor: any):any{
+    return this.http.put('https://localhost:7170/api/Doctor',doctor);
+  }
+  addDoctor(doctor:any):any{
+    return this.http.post('https://localhost:7170/api/Doctor',doctor);
+  }
 }
