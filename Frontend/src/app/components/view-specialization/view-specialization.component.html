@@ -2,18 +2,22 @@
 <br>
 
 <div class="container">
-    <h1 class="text-center"> View specialization </h1>
-    <table border="1" class="center">
-        <tr>
-            <th>specialization Code</th>
-            <th>specialization Name</th>
-            <th>Action</th>
-        </tr>
-        <tr *ngFor="let specialization of specializations">
-            <th>{{specialization.specializationCode}}</th>
-            <th>{{specialization.specializationName}}</th>
-            <th>
-                <button (click)="viewDoctor(specialization)">View Doctors</button>
-            </th>
-        </tr>
+    <h1 class="text-center"> View Specialization </h1>
+    <table class="table center table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Specialization Code</th>
+                <th>Specialization Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let specialization of specializations">
+                <th>{{specialization.specializationCode}}</th>
+                <th>{{specialization.specializationName}}</th>
+                <th>
+                    <button class="btn btn-primary" (click)="viewDoctor(specialization)">View Doctors</button>
+                </th>
+            </tr>
+        </tbody>
     </table>
