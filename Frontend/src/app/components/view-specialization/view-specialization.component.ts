@@ -1,16 +1,25 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ISpecialization } from 'src/app/models/specialization.model';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-view-specialization',
   templateUrl: './view-specialization.component.html',
   styleUrls: ['./view-specialization.component.css']
 })
+
 export class ViewSpecializationComponent {
-  specializations:ISpecialization[]=[{SpecializationCode:"ANE" ,SpecializationName:"Anesthesilogoist"},{SpecializationCode: "CAR",SpecializationName:"Cardilogist"},{SpecializationCode: "GYN",SpecializationName:"Gnyyecologist"}];
-  constructor( private router:Router){}
-  editspecialization(doctor:any){
-    this.router.navigate(['/doctors',doctor.SpecializationCode])
+  specializations: ISpecialization[]=[];
+  ngOnInit(){
+    this.http.getAllSpecializations().subscribe((data) => {  
+      console.log(data);
+      this.specializations=data;
+  }); 
+  }
+
+  constructor(private http:DataService, private router:Router){}
+  viewDoctor(specialization:any){
+    this.router.navigate(['/specializations',specialization.SpecializationCode])
   }
 }

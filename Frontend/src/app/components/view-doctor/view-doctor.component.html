@@ -1,38 +1,19 @@
 <br>
-
- 
-
 <br>
 
 <div class="container">
-
     <h1 class="text-center"> View Doctor </h1>
-
     <table border="1" class="center">
-
         <tr>
-
             <th>Doctor ID</th>
-
             <th>Doctor Name</th>
-
             <th>Action</th>
-
         </tr>
-
- 
-
         <tr *ngFor="let doctor of doctors">
-
             <th>{{doctor.doctorId}}</th>
-
             <th>{{doctor.doctorName}}</th>
-
             <th>
                 <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
-
             </th>
-
         </tr>
-
     </table>
