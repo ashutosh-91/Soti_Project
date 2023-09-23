@@ -8,6 +8,8 @@ namespace project.Models
         Specialization GetSpecializationByCode(string code);
         bool AddSpecialization(Specialization specialization);
         bool UpdateSpecialization(Specialization specialization);
+     
+        Specialization GetSpecializationByName(string name);
         bool DeleteSpecialization(string code);
     }
 }

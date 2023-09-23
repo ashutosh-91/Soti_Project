@@ -44,6 +44,10 @@ namespace project.Models
         {
             return _context.Specializations.FirstOrDefault(x => x.SpecializationCode == code);
         }
+        public Specialization GetSpecializationByName(string name)
+        {
+            return _context.Specializations.FirstOrDefault(x=>x.SpecializationName==name);
+        }
 
         public bool UpdateSpecialization(Specialization specialization)
         {
@@ -57,5 +61,9 @@ namespace project.Models
             }
             return false;
         }
+
+
+       
+
     }
 }
