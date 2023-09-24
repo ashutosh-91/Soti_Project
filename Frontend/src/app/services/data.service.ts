@@ -11,12 +11,17 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
   getAllDoctors():Observable<IDoctor[]>{
+   
   //Change the port Number Whoever is running The Backend ~AS 
 
     
     // return this.http.get<IDoctor[]>('https://localhost:7170/api/Doctor');
     return this.http.get<IDoctor[]>('https://localhost:44396/api/Doctor');
 
+  }
+  deleteDoctor(doctor: any):any{
+   
+    return this.http.delete('https://localhost:44396/api/Doctor/'+doctor);
   }
   updateDoctor(doctor: any):any{
     return this.http.put('https://localhost:44396/api/Doctor',doctor);

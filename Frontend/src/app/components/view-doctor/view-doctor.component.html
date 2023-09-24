@@ -18,15 +18,25 @@
                 <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
             </th>
             <th>
-                <button (click)="removeDoctor(doctor)">Remove Doctor</button>
-
+                <button (click)="deleteDoctor(doctor.doctorId)">Remove Doctor</button>
+              
             </th>
         </tr>
-        <div class="card">
-            <div class="card-body" class="alert alert-success " role="alert" *ngIf="couldFetch" ngModel>
-                {{showMsgDiv}}
-            </div>
+   
+          <!-- Remove message -->
+          <!-- <div class="card-body" class="alert alert-success " role="alert" *ngIf="deleteMsg" ngModel>
+            Removed Doctor SuccessFully !
+          </div> -->
+
+         <!-- Fetch message -->
+          <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="couldFetch" ngModel>
+            <strong>{{showMsgDiv}}!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
+
+
       
 
     </table>
