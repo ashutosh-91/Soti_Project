@@ -29,14 +29,20 @@ export class ViewDoctorComponent {
     this.http.getAllDoctors().subscribe((data:any) => {  
       console.log(data);
       this.doctors=data;
+     
+        
       if(data.length>0){
+        
         this.showMsgDiv="All Doctors Fetched Successfully!!!";
         this.couldFetch=!this.couldFetch;
+        
       }
       else{
         this.showMsgDiv="No Doctors Present !!!";
         this.couldFetch=false;
+      
       }
+      
   }); 
     console.log("cate "+this.category);
     this.doctors=this.temp;
@@ -50,5 +56,18 @@ export class ViewDoctorComponent {
   
   editDoctor(doctor:any){
     this.router.navigate(['/doctor',doctor.doctorId])
+  }
+
+//Created the httpdelete and Updated Data
+  deleteDoctor(doctor:Number){
+    // console.log(typeof(doctor))
+       this.http.deleteDoctor(doctor).subscribe((data:any)=>{
+         this.deleteMsg=data;
+         this.http.getAllDoctors().subscribe((data:any)=>{
+          this.doctors=data;
+         });
+        
+        //  console.log(data)
+       })
   }
 }

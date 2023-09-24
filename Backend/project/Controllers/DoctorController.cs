@@ -52,7 +52,8 @@ namespace project.Controllers
                 return NotFound(false);
             }
         }
-        [HttpDelete]
+
+        [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
             var data = doctorRepository.DeleteDoctor(id);
