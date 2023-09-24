@@ -9,6 +9,7 @@
             <th>Doctor Name</th>
             <th>Action</th>
         </tr>
+        <span class="alert alert-danger" role="alert" *ngIf="!couldFetch" ngModel>No Doctors Present In the Record</span>
         <tr *ngFor="let doctor of doctors">
             <th>{{doctor.doctorId}}</th>
             <th>{{doctor.doctorName}}</th>
@@ -16,4 +17,11 @@
                 <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
             </th>
         </tr>
+        <div class="card">
+            <div class="card-body" class="alert alert-success " role="alert" *ngIf="couldFetch" ngModel>
+                {{showMsgDiv}}
+            </div>
+          </div>
+      
+
     </table>

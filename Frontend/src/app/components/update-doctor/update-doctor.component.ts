@@ -16,6 +16,7 @@ export class UpdateDoctorComponent {
   constructor(private dataService:DataService,private activatedRoute:ActivatedRoute, private router:Router){
     this.doctorModel.DoctorId=Number(this.activatedRoute.snapshot.paramMap.get('docId'));
   }
+ 
   updateDoctor(){
 
     console.log(this.doctorModel);

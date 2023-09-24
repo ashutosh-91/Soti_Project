@@ -12,6 +12,8 @@ export class ViewDoctorComponent {
   doctors:IDoctor[]=[];
   temp:IDoctor[]=[];
   category:any;
+  showMsgDiv='';
+  couldFetch=false;
   constructor(private http:DataService, private router:Router,private activatedRoute:ActivatedRoute){
     this.category=this.activatedRoute.snapshot.paramMap.get('specializationCode');
     
@@ -23,6 +25,14 @@ export class ViewDoctorComponent {
     this.http.getAllDoctors().subscribe((data:any) => {  
       console.log(data);
       this.doctors=data;
+      if(data.length>0){
+        this.showMsgDiv="All Doctors Fetched Successfully!!!";
+        this.couldFetch=!this.couldFetch;
+      }
+      else{
+        this.showMsgDiv="No Doctors Present !!!";
+        this.couldFetch=false;
+      }
   }); 
     console.log("cate "+this.category);
     this.doctors=this.temp;
