@@ -10,7 +10,8 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ViewDoctorComponent {
   doctors:IDoctor[]=[];
-  temp:IDoctor[]=[];
+  tempDoctors:IDoctor[]=[];
+  doctorIds:any[]=[];
   category:any;
   showMsgDiv:string='';
   couldFetch=false;
@@ -29,28 +30,41 @@ export class ViewDoctorComponent {
     this.http.getAllDoctors().subscribe((data:any) => {  
       console.log(data);
       this.doctors=data;
+         
+      //Error Causing 
      
-        
-      if(data.length>0){
-        
-        this.showMsgDiv="All Doctors Fetched Successfully!!!";
-        this.couldFetch=!this.couldFetch;
-        
-      }
-      else{
-        this.showMsgDiv="No Doctors Present !!!";
-        this.couldFetch=false;
+      //From here
+      // if(data.length>0){       
+      //   this.showMsgDiv="All Doctors Fetched Successfully!!!";
+      //   this.couldFetch=!this.couldFetch;        
+      // }
+      // else{
+      //   this.showMsgDiv="No Doctors Present !!!";
+      //   this.couldFetch=false;
+      // }
       
-      }
+      //till here
       
   }); 
     console.log("cate "+this.category);
-    this.doctors=this.temp;
-    console.log("temp "+this.temp);
 
   }
   else{
-    console.log("else "+this.category);
+    this.http.getDoctorSpecialization(this.category).subscribe((data:any)=>{
+      this.doctorIds=data;
+      console.log(this.doctorIds);
+      this.http.getAllDoctors().subscribe((data:any) => { 
+        this.tempDoctors=data;
+        console.log(this.tempDoctors);
+        this.doctors=this.tempDoctors.filter(item=>{
+          return this.doctorIds.some(filterItem=>filterItem.doctorId==item.doctorId);
+         });
+         console.log('Final')
+         console.log(this.doctors);
+       });
+       
+    });
+    
   }
   }
   
@@ -62,7 +76,7 @@ export class ViewDoctorComponent {
   deleteDoctor(doctor:Number){
     // console.log(typeof(doctor))
        this.http.deleteDoctor(doctor).subscribe((data:any)=>{
-         this.deleteMsg=data;
+        //  this.deleteMsg=data;
          this.http.getAllDoctors().subscribe((data:any)=>{
           this.doctors=data;
          });

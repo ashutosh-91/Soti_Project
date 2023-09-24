@@ -38,5 +38,8 @@ export class DataService {
   updateSurgery(surgery:any):any{
     return this.http.put('https://localhost:7170/api/Surgery',surgery);
   }
+  getDoctorSpecialization(specializationCode :any):any{
+    return this.http.get('https://localhost:7170/api/DoctorSpecialization/'+specializationCode);
+  }
 
 }

@@ -9,7 +9,7 @@
         }
         public List<DoctorSpecialization> GetDoctorsBySpecializations(string specializationCode)
         {
-          return  _context.DoctorSpecialization.ToList();
+          return  _context.DoctorSpecialization.Where(e=>e.SpecializationCode==specializationCode).ToList();
         }
     }
 }
