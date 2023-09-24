@@ -22,4 +22,11 @@ export class DataService {
   getAllSpecializations():Observable<ISpecialization[]>{
     return this.http.get<ISpecialization[]>('https://localhost:7170/api/Specialization');
   }
+  getAllSurgeries():any{
+    return this.http.get('https://localhost:7170/api/Surgery');
+  }
+  updateSurgery(surgery:any):any{
+    return this.http.put('https://localhost:7170/api/Surgery',surgery);
+  }
+
 }
