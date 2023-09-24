@@ -12,11 +12,15 @@ export class ViewDoctorComponent {
   doctors:IDoctor[]=[];
   temp:IDoctor[]=[];
   category:any;
-  showMsgDiv='';
+  showMsgDiv:string='';
   couldFetch=false;
   constructor(private http:DataService, private router:Router,private activatedRoute:ActivatedRoute){
-    this.category=this.activatedRoute.snapshot.paramMap.get('specializationCode');
-    
+    try{
+      this.category=this.activatedRoute.snapshot.paramMap.get('specializationCode');
+    }
+    catch(e){
+      this.category=null;
+    }
   }
    ngOnInit(){
 
