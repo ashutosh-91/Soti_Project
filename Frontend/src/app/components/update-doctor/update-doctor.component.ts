@@ -16,10 +16,11 @@ export class UpdateDoctorComponent {
   constructor(private dataService:DataService,private activatedRoute:ActivatedRoute, private router:Router){
     this.doctorModel.DoctorId=Number(this.activatedRoute.snapshot.paramMap.get('docId'));
   }
+ 
   updateDoctor(){
 
     console.log(this.doctorModel);
-    this.dataService.addDoctor(this.doctorModel).subscribe((data: any) => {  
+    this.dataService.updateDoctor(this.doctorModel).subscribe((data: any) => {  
       console.log(data);
   });
      

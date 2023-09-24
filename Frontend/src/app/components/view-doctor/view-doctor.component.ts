@@ -10,10 +10,20 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ViewDoctorComponent {
   doctors:IDoctor[]=[];
+  showMsgDiv:string ='';
+  couldFetch:boolean=false;
   ngOnInit(){
     this.http.getAllDoctors().subscribe((data) => {  
       console.log(data);
       this.doctors=data;
+      if(data.length>0){
+        this.showMsgDiv="All Doctors Fetched Successfully!!!";
+        this.couldFetch=!this.couldFetch;
+      }
+      else{
+        this.showMsgDiv="No Doctors Present !!!";
+        this.couldFetch=false;
+      }
   }); 
   }
   constructor(private http:DataService, private router:Router){}
