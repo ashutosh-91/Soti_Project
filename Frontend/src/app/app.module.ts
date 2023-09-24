@@ -13,6 +13,7 @@ import { ViewDoctorComponent } from './components/view-doctor/view-doctor.compon
 import { ViewSpecializationComponent } from './components/view-specialization/view-specialization.component';
 import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/view-todays-surgery.component';
 import {  HttpClientModule } from "@angular/common/http";
+import { RegistrationPageComponent } from './pages/registration-page/registration-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {  HttpClientModule } from "@angular/common/http";
     ViewDoctorComponent,
     ViewSpecializationComponent,
     ViewTodaysSurgeryComponent,
-    UpdateDoctorComponent
+    UpdateDoctorComponent,
+    RegistrationPageComponent
   ],
   imports: [
     BrowserModule,
