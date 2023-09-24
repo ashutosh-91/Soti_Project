@@ -12,8 +12,8 @@ using project.Models;
 namespace project.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230923141954_Surgery")]
-    partial class Surgery
+    [Migration("20230924122938_creation-of-tables")]
+    partial class creationoftables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,24 @@ namespace project.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("project.Models.DoctorSpecialization", b =>
+                {
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SpecializationCode")
+                        .HasColumnType("nvarchar(3)");
+
+                    b.Property<DateTime>("SpecializationDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("DoctorId", "SpecializationCode");
+
+                    b.HasIndex("SpecializationCode");
+
+                    b.ToTable("DoctorSpecialization");
+                });
 
             modelBuilder.Entity("project.Models.IDoctor", b =>
                 {
@@ -44,17 +62,20 @@ namespace project.Migrations
 
             modelBuilder.Entity("project.Models.ISurgery", b =>
                 {
-                    b.Property<int?>("DoctorId")
+                    b.Property<int>("SurgeryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("DoctorId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SurgeryId"));
+
+                    b.Property<int?>("DoctorId")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("EndTime")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(4,2)");
 
                     b.Property<decimal>("StartTime")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(4,2)");
 
                     b.Property<string>("SurgeryCategory")
                         .IsRequired()
@@ -63,10 +84,7 @@ namespace project.Migrations
                     b.Property<DateTime>("SurgeryDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("SurgeryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("DoctorId");
+                    b.HasKey("SurgeryId");
 
                     b.ToTable("Surgery");
                 });
@@ -85,6 +103,21 @@ namespace project.Migrations
                     b.HasKey("SpecializationCode");
 
                     b.ToTable("Specializations");
+                });
+
+            modelBuilder.Entity("project.Models.DoctorSpecialization", b =>
+                {
+                    b.HasOne("project.Models.IDoctor", null)
+                        .WithMany()
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("project.Models.Specialization", null)
+                        .WithMany()
+                        .HasForeignKey("SpecializationCode")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

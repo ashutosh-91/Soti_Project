@@ -10,8 +10,8 @@ import { ISpecialization } from '../models/specialization.model';
 export class DataService {
 
   constructor(private http:HttpClient) { }
-  getAllDoctors():Observable<IDoctor[]>{
-    return this.http.get<IDoctor[]>('https://localhost:7170/api/Doctor');
+  getAllDoctors():any{
+    return this.http.get('https://localhost:7170/api/Doctor');
   }
   updateDoctor(doctor: any):any{
     return this.http.put('https://localhost:7170/api/Doctor',doctor);

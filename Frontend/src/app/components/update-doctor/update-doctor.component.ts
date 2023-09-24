@@ -21,8 +21,7 @@ export class UpdateDoctorComponent {
     console.log(this.doctorModel);
     this.dataService.updateDoctor(this.doctorModel).subscribe((data: any) => {  
       console.log(data);
-  });
-     
+  });     
      this.router.navigate(['/home']);
   }
 }
