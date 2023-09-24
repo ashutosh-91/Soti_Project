@@ -19,7 +19,7 @@ export class UpdateDoctorComponent {
   updateDoctor(){
 
     console.log(this.doctorModel);
-    this.dataService.addDoctor(this.doctorModel).subscribe((data: any) => {  
+    this.dataService.updateDoctor(this.doctorModel).subscribe((data: any) => {  
       console.log(data);
   });
      
