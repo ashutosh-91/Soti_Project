@@ -8,6 +8,7 @@
             <th>Doctor ID</th>
             <th>Doctor Name</th>
             <th>Action</th>
+            <th>Delete</th>
         </tr>
         <span class="alert alert-danger" role="alert" *ngIf="!couldFetch" ngModel>No Doctors Present In the Record</span>
         <tr *ngFor="let doctor of doctors">
@@ -15,6 +16,10 @@
             <th>{{doctor.doctorName}}</th>
             <th>
                 <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
+            </th>
+            <th>
+                <button (click)="removeDoctor(doctor)">Remove Doctor</button>
+
             </th>
         </tr>
         <div class="card">
