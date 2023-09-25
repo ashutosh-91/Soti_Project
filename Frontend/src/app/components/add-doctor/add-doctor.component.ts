@@ -11,6 +11,8 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class AddDoctorComponent {
   message: string = '';
+  textMessage = ""
+  alertClass = ""
   doctorModel=new Doctor();
   constructor(private dataService:DataService, private router:Router){
 
@@ -20,10 +22,22 @@ export class AddDoctorComponent {
   }
   addDoctor(){
     console.log(this.doctorModel);
-    this.dataService.addDoctor(this.doctorModel).subscribe((data: any) => {  
-      console.log(data);
-  });
+    this.dataService.addDoctor(this.doctorModel).subscribe( 
+      (response: any) => {
+        //On successful excecution of service
+        this.textMessage = 'Doctors Fetched Successfully';
+        this.alertClass = 'alert alert-success';
+        console.log(this.textMessage);
+      },
+
+      (error: any) => {
+        //In case of error
+        this.textMessage = 'Error fetching doctors';
+        this.alertClass = 'alert alert-danger';
+        console.error(this.textMessage);
+      }
+  );
      
-     //this.router.navigate(['/home']);
+     this.router.navigate(['/home']);
   }
 }
