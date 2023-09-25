@@ -10,6 +10,7 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = project
 build_property.RootNamespace = project
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\aamudala\project\Soti_Project\Backend\project\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
@@ -22,4 +23,11 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Training\Main Project -2\Soti_Project\Backend\project
 >>>>>>> 44dbc7121dc74bb2408eb7b2b19f1f9c733688ac
+=======
+build_property.ProjectDir = C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Capstone Project\Soti_Project\Backend\project\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Capstone Project\Soti_Project\Backend\project
+>>>>>>> 032359fc7f7e3acd3b9c13d1dbdff02a2faae3ba
 build_property._RazorSourceGeneratorDebug = 

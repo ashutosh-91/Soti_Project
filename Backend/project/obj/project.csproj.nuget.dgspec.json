@@ -17,10 +17,10 @@
     "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj": {}
   },
   "projects": {
-    "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj": {
+    "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Capstone Project\\Soti_Project\\Backend\\project\\project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj",
+        "projectUniqueName": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Capstone Project\\Soti_Project\\Backend\\project\\project.csproj",
         "projectName": "project",
         "projectPath": "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj",
         "packagesPath": "C:\\Users\\ajose\\.nuget\\packages\\",
@@ -31,11 +31,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\aamudala\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
           "C:\\Users\\ajose\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 44dbc7121dc74bb2408eb7b2b19f1f9c733688ac
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -104,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
