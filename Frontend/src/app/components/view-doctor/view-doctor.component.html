@@ -10,7 +10,7 @@
             <th>Action</th>
             <th>Delete</th>
         </tr>
-        <span class="alert alert-danger" role="alert" *ngIf="!couldFetch" ngModel>No Doctors Present In the Record</span>
+        <span class="alert alert-danger" role="alert" *ngIf="!couldFetch">No Doctors Present In the Record</span>
         <tr *ngFor="let doctor of doctors">
             <th>{{doctor.doctorId}}</th>
             <th>{{doctor.doctorName}}</th>
@@ -29,14 +29,15 @@
           </div> -->
 
          <!-- Fetch message -->
-          <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="couldFetch" ngModel>
-            <strong>{{showMsgDiv}}!</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          
 
 
       
 
     </table>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="couldFetch" ngModel>
+      <strong>{{showMsgDiv}}!</strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
