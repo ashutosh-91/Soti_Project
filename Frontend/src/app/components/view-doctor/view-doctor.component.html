@@ -3,25 +3,29 @@
 
 <div class="container">
     <h1 class="text-center"> View Doctor </h1>
-    <table border="1" class="center">
+    <table border="1" class=" table center">
+        <thead class="thead thead-dark">
         <tr>
             <th>Doctor ID</th>
             <th>Doctor Name</th>
             <th>Action</th>
             <th>Delete</th>
         </tr>
+        </thead>
         <span class="alert alert-danger" role="alert" *ngIf="!couldFetch">No Doctors Present In the Record</span>
+        <tbody>
         <tr *ngFor="let doctor of doctors">
-            <th>{{doctor.doctorId}}</th>
-            <th>{{doctor.doctorName}}</th>
-            <th>
-                <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
-            </th>
-            <th>
+            <td>{{doctor.doctorId}}</td>
+            <td>{{doctor.doctorName}}</td>
+            <td>
+                <button class="btn btn-primary" (click)="editDoctor(doctor)">Edit Doctor Details</button>
+            </td>
+            <td>
                 <button (click)="deleteDoctor(doctor.doctorId)">Remove Doctor</button>
               
-            </th>
+            </td>
         </tr>
+    </tbody>
    
           <!-- Remove message -->
           <!-- <div class="card-body" class="alert alert-success " role="alert" *ngIf="deleteMsg" ngModel>
