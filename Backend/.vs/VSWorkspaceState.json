@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\project",
-    "\\project\\Controllers",
-    "\\project\\Migrations",
     "\\project\\Models"
   ],
-  "SelectedNode": "\\project\\Models\\Specialization.cs",
+  "SelectedNode": "\\project\\Models\\DoctorRepositoryImpl.cs",
   "PreviewInSolutionExplorer": false
 }
