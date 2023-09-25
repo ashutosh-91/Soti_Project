@@ -34,14 +34,14 @@ export class ViewDoctorComponent {
       //Error Causing 
      
       //From here
-      // if(data.length>0){       
-      //   this.showMsgDiv="All Doctors Fetched Successfully!!!";
-      //   this.couldFetch=!this.couldFetch;        
-      // }
-      // else{
-      //   this.showMsgDiv="No Doctors Present !!!";
-      //   this.couldFetch=false;
-      // }
+      if(data.length>0){       
+        this.showMsgDiv="All Doctors Fetched Successfully!!!";
+        this.couldFetch=!this.couldFetch;        
+      }
+      else{
+        this.showMsgDiv="No Doctors Present !!!";
+        this.couldFetch=false;
+      }
       
       //till here
       
