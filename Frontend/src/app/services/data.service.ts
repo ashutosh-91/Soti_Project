@@ -16,7 +16,7 @@ export class DataService {
 
     
     // return this.http.get<IDoctor[]>('https://localhost:7170/api/Doctor');
-    return this.http.get<IDoctor[]>('https://localhost:7170/api/Doctor');
+    return this.http.get<IDoctor[]>('https://localhost:44396/api/Doctor');
 
   }
   deleteDoctor(doctor: any):any{
@@ -30,7 +30,7 @@ export class DataService {
     return this.http.post('https://localhost:7170/api/Doctor',doctor);
   }
   getAllSpecializations():Observable<ISpecialization[]>{
-    return this.http.get<ISpecialization[]>('https://localhost:7170/api/Specialization');
+    return this.http.get<ISpecialization[]>('https://localhost:44396/api/Specialization');
   }
   getAllSurgeries():any{
     return this.http.get('https://localhost:7170/api/Surgery');
@@ -39,7 +39,7 @@ export class DataService {
     return this.http.put('https://localhost:7170/api/Surgery',surgery);
   }
   getDoctorSpecialization(specializationCode :any):any{
-    return this.http.get('https://localhost:7170/api/DoctorSpecialization/'+specializationCode);
+    return this.http.get('https://localhost:44396/api/DoctorSpecialization/'+specializationCode);
   }
 
 }

@@ -1,6 +1,6 @@
 <br>
 
- 
+
 
 <br>
 
@@ -8,39 +8,30 @@
 
     <h1 class="text-center"> View specialization </h1>
 
-    <table border="1" class="center">
-
-        <tr>
-
-            <th>Surgery Id</th>
-
-            <th>Doctor Id</th>
-            <th>Surgery Date</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Surgery Category</th>
-            <th>Action</th>
-
-        </tr>
-
- 
-
-        <tr *ngFor="let surgery of surgeries">
-
-            <th>{{surgery.surgeryId}}</th>
-
-            <th>{{surgery.doctorId}}</th>
-            <th>{{surgery.surgeryDate}}</th>
-            <th>{{surgery.startTime}}</th>
-            <th>{{surgery.endTime}}</th>
-            <th>{{surgery.surgeryCategory}}</th>
-
-
-            <th>
-                <button (click)="editSurgery(surgery)">Edit</button>
-
-            </th>
-
-        </tr>
+    <table border="1" class="table center">
+        <thead class="thead thead-dark">
+            <tr>
+                <th>Surgery Id</th>
+                <th>Doctor Id</th>
+                <th>Surgery Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Surgery Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let surgery of surgeries">
+                <td>{{surgery.surgeryId}}</td>
+                <td>{{surgery.doctorId}}</td>
+                <td>{{surgery.surgeryDate}}</td>
+                <td>{{surgery.startTime}}</td>
+                <td>{{surgery.endTime}}</td>
+                <td>{{surgery.surgeryCategory}}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="editSurgery(surgery)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
 
     </table>
