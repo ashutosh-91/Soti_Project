@@ -8346,23 +8346,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\assharma\\.nuget\\packages\\": {},
+    "C:\\Users\\aalappat\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj",
+      "projectUniqueName": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Capstone Project\\Soti_Project_Final\\Soti_Project\\Backend\\project\\project.csproj",
       "projectName": "project",
-      "projectPath": "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj",
-      "packagesPath": "C:\\Users\\assharma\\.nuget\\packages\\",
-      "outputPath": "C:\\Training_SOTI\\CureWell\\Backend\\project\\obj\\",
+      "projectPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Capstone Project\\Soti_Project_Final\\Soti_Project\\Backend\\project\\project.csproj",
+      "packagesPath": "C:\\Users\\aalappat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Capstone Project\\Soti_Project_Final\\Soti_Project\\Backend\\project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\assharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aalappat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
