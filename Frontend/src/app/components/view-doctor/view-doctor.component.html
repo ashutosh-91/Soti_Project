@@ -3,17 +3,21 @@
 
 <div class="container">
     <h1 class="text-center"> View Doctor </h1>
-    <table border="1" class="center">
+    <table border="1" class=" table center">
+        <thead class="thead thead-dark">
         <tr>
             <th>Doctor ID</th>
             <th>Doctor Name</th>
             <th>Action</th>
         </tr>
+    </thead>
+    <tbody>
         <tr *ngFor="let doctor of doctors">
             <th>{{doctor.doctorId}}</th>
             <th>{{doctor.doctorName}}</th>
             <th>
-                <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
+                <button class="btn btn-primary" (click)="editDoctor(doctor)">Edit Doctor Details</button>
             </th>
         </tr>
+    </tbody>
     </table>
