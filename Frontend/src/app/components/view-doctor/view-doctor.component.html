@@ -8,12 +8,36 @@
             <th>Doctor ID</th>
             <th>Doctor Name</th>
             <th>Action</th>
+            <th>Delete</th>
         </tr>
+        <span class="alert alert-danger" role="alert" *ngIf="!couldFetch">No Doctors Present In the Record</span>
         <tr *ngFor="let doctor of doctors">
             <th>{{doctor.doctorId}}</th>
             <th>{{doctor.doctorName}}</th>
             <th>
                 <button (click)="editDoctor(doctor)">Edit Doctor Details</button>
             </th>
+            <th>
+                <button (click)="deleteDoctor(doctor.doctorId)">Remove Doctor</button>
+              
+            </th>
         </tr>
+   
+          <!-- Remove message -->
+          <!-- <div class="card-body" class="alert alert-success " role="alert" *ngIf="deleteMsg" ngModel>
+            Removed Doctor SuccessFully !
+          </div> -->
+
+         <!-- Fetch message -->
+          
+
+
+      
+
     </table>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="couldFetch" ngModel>
+      <strong>{{showMsgDiv}}!</strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>

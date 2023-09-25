@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\aamudala\\project\\Soti_Project\\Backend\\project\\project.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\aamudala\\project\\Soti_Project\\Backend\\project\\project.csproj",
         "packagesPath": "C:\\Users\\aamudala\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\aamudala\\project\\Soti_Project\\Backend\\project\\obj\\",
+=======
+    "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj": {}
+  },
+  "projects": {
+    "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj",
+        "projectName": "project",
+        "projectPath": "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\project.csproj",
+        "packagesPath": "C:\\Users\\ajose\\.nuget\\packages\\",
+        "outputPath": "C:\\Training\\Main Project -2\\Soti_Project\\Backend\\project\\obj\\",
+>>>>>>> 44dbc7121dc74bb2408eb7b2b19f1f9c733688ac
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\aamudala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\ajose\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 44dbc7121dc74bb2408eb7b2b19f1f9c733688ac
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -86,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
