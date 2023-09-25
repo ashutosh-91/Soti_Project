@@ -23,6 +23,7 @@ namespace project.Models
         public bool DeleteDoctor(int id)
         {
             var doctor = _context.Doctors.FirstOrDefault(x => x.DoctorId == id);
+            
             if (doctor != null)
             {
                 _context.Doctors.Remove(doctor);

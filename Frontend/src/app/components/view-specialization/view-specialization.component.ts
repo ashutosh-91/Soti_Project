@@ -20,6 +20,7 @@ export class ViewSpecializationComponent {
 
   constructor(private http:DataService, private router:Router){}
   viewDoctor(specialization:any){
-    this.router.navigate(['/specializations',specialization.SpecializationCode])
+    console.log(specialization);
+    this.router.navigate(['/specialization',specialization.specializationCode])
   }
 }

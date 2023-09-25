@@ -12,6 +12,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<DoctorRepository, DoctorRepositoryImpl>();
 builder.Services.AddTransient<SpecializationRepository, SpecializationRepositoryImpl>();
+builder.Services.AddTransient<SurgeryRepository, SurgeryRepositoryImpl>();
+builder.Services.AddTransient<DoctorSpecializationRepository, DoctorSpecializationRepositoryImpl>();
+
 
 builder.Services.AddDbContextPool<AppDbContext>(options =>
 {
