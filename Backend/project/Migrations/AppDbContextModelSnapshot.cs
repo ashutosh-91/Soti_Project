@@ -76,12 +76,16 @@ namespace project.Migrations
 
                     b.Property<string>("SurgeryCategory")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(3)");
 
                     b.Property<DateTime>("SurgeryDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("SurgeryId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("SurgeryCategory");
 
                     b.ToTable("Surgery");
                 });
@@ -113,6 +117,19 @@ namespace project.Migrations
                     b.HasOne("project.Models.Specialization", null)
                         .WithMany()
                         .HasForeignKey("SpecializationCode")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("project.Models.ISurgery", b =>
+                {
+                    b.HasOne("project.Models.IDoctor", null)
+                        .WithMany()
+                        .HasForeignKey("DoctorId");
+
+                    b.HasOne("project.Models.Specialization", null)
+                        .WithMany()
+                        .HasForeignKey("SurgeryCategory")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -16,13 +16,21 @@ namespace project.Models
 
         public bool AddDoctorSpecialization(DoctorSpecialization doctorSpecialization)
         {
-            _context.DoctorSpecialization.Add(doctorSpecialization);
-            int rows = _context.SaveChanges();
-            if (rows > 0)
+            try
             {
-                return true;
+                _context.DoctorSpecialization.Add(doctorSpecialization);
+                int rows = _context.SaveChanges();
+                if (rows > 0)
+                {
+                    return true;
+                }
+                return false;
+
+            } catch (Exception ex)
+            {
+                return false;
             }
-            return false;
+           
         }
 
     }

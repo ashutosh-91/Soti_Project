@@ -8,10 +8,21 @@
         }
         public bool AddSurgery(ISurgery surgery)
         {
-            _context.Add(surgery);
-            int rows=_context.SaveChanges();
+            int rows;
+            try
+            {
+              
+                _context.Add(surgery);
+                 rows = _context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+           
 
-            return (rows>0)?true:false;
+           
         }
 
         public List<ISurgery> GetAllSurgeryTypeForToday()
@@ -23,17 +34,25 @@
         public bool UpdateSurgery(ISurgery surgery)
         {
 
-            var surgery_data = _context.Surgery.FirstOrDefault(x => x.SurgeryId == surgery.SurgeryId);
-            if (surgery_data != null)
-            {
-                surgery_data.SurgeryDate = surgery.SurgeryDate;
-                surgery_data.SurgeryCategory=surgery.SurgeryCategory;
-                surgery_data.DoctorId = surgery.DoctorId;
-                surgery_data.StartTime= surgery.StartTime;
-                surgery_data.EndTime= surgery.EndTime;
-                _context.SaveChanges();
-                return true;   
+            try {
+                var surgery_data = _context.Surgery.FirstOrDefault(x => x.SurgeryId == surgery.SurgeryId);
+
+                if (surgery_data != null)
+                {
+                    surgery_data.SurgeryDate = surgery.SurgeryDate;
+                    surgery_data.SurgeryCategory = surgery.SurgeryCategory;
+                    surgery_data.DoctorId = surgery.DoctorId;
+                    surgery_data.StartTime = surgery.StartTime;
+                    surgery_data.EndTime = surgery.EndTime;
+                    _context.SaveChanges();
+                    return true;
+                }
             }
+            catch (Exception e)
+            {
+                return false;
+            }
+            
             return false;
 
         }
