@@ -10,6 +10,9 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ViewTodaysSurgeryComponent {
   surgeries:ISurgery[]=[];
+  alertClass = ""
+  textMessage = ""
+  getTodaySurgery: any;
   constructor( private router:Router,private dataService:DataService){
     this.dataService.getAllSurgeries().subscribe((data:any) => {
         this.surgeries=data;
@@ -23,4 +26,23 @@ export class ViewTodaysSurgeryComponent {
         {data:surgery }    
     })
   }
+  ngOnInit(){
+     this.getTodaySurgery().subscribe((data: ISurgery[]) => {  
+      console.log(data);
+      this.surgeries=data;
+    },
+  (response: any) => {
+    //On successful excecution of service
+    this.textMessage = 'Specializations Fetched Successfully';
+    this.alertClass = 'alert alert-success';
+    console.log(this.textMessage);
+  },
+
+  (error: any) => {
+    //In case of error
+    this.textMessage = 'Error fetching Specializations';
+    this.alertClass = 'alert alert-danger';
+    console.error(this.textMessage);
+  }); 
+}
 }
