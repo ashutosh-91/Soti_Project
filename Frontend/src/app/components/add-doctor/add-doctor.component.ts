@@ -17,6 +17,8 @@ export class AddDoctorComponent {
   constructor(private dataService:DataService, private router:Router){
 
   }
+
+  //added display
   displayMessage(){
     this.message = 'Doctor successfully added'
   }

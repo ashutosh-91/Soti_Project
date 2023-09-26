@@ -370,6 +370,101 @@ C:\Training\Main Project -2\Soti_Project\Backend\project\obj\Debug\net6.0\refint
 C:\Training\Main Project -2\Soti_Project\Backend\project\obj\Debug\net6.0\project.pdb
 C:\Training\Main Project -2\Soti_Project\Backend\project\obj\Debug\net6.0\project.genruntimeconfig.cache
 C:\Training\Main Project -2\Soti_Project\Backend\project\obj\Debug\net6.0\ref\project.dll
+<<<<<<< HEAD
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.Development.json
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.json
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\project.exe
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\project.deps.json
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\project.runtimeconfig.json
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\project.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\project.pdb
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Azure.Core.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Azure.Identity.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Humanizer.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Web.Http.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.CodeDom.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Text.Json.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Capstone\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.csproj.AssemblyReference.cache
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.AssemblyInfoInputs.cache
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.AssemblyInfo.cs
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.csproj.CoreCompileInputs.cache
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.MvcApplicationPartsAssemblyInfo.cs
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.MvcApplicationPartsAssemblyInfo.cache
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.project.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.build.project.props
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.project.props
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.project.props
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets.build.json
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets.development.json
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\scopedcss\bundle\project.styles.css
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.csproj.CopyComplete
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.dll
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\refint\project.dll
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.pdb
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\project.genruntimeconfig.cache
+C:\Capstone\Soti_Project\Backend\project\obj\Debug\net6.0\ref\project.dll
+=======
 C:\Users\Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.json
 C:\Users\Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\project.exe
@@ -556,6 +651,7 @@ C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project
 C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.pdb
 C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.genruntimeconfig.cache
 C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project\Backend\project\obj\Debug\net6.0\ref\project.dll
+<<<<<<< HEAD
 C:\Users\Project\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Project\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.json
 C:\Users\Project\Soti_Project\Backend\project\bin\Debug\net6.0\project.exe
@@ -649,3 +745,6 @@ C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\refint\project.dl
 C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.pdb
 C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.genruntimeconfig.cache
 C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\ref\project.dll
+=======
+>>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
+>>>>>>> 76bbffe3b1076894a0f0da7a3b5f5424bf2cab48

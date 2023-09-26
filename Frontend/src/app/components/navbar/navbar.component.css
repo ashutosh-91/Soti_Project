@@ -23,7 +23,6 @@ h4 {
   color: gainsboro;
 }
 
-.active-link{
-  background-color: rgb(47, 139, 219);
-  border-radius: 50px;
+.active-link h4{
+  color: yellow;
 }
