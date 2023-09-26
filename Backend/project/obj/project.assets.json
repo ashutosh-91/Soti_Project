@@ -8346,23 +8346,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\aakash\\.nuget\\packages\\": {},
+=======
     "C:\\Users\\aalappat\\.nuget\\packages\\": {},
+>>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Capstone\\Soti_Project\\Backend\\project\\project.csproj",
+      "projectName": "project",
+      "projectPath": "C:\\Capstone\\Soti_Project\\Backend\\project\\project.csproj",
+      "packagesPath": "C:\\Users\\aakash\\.nuget\\packages\\",
+      "outputPath": "C:\\Capstone\\Soti_Project\\Backend\\project\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\project.csproj",
       "projectName": "project",
       "projectPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\project.csproj",
       "packagesPath": "C:\\Users\\aalappat\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\obj\\",
+>>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
+        "C:\\Users\\aakash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
         "C:\\Users\\aalappat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8371,6 +8387,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8431,7 +8448,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
       }
     }
   },
