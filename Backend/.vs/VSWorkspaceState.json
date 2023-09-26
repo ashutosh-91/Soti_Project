@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\project",
+    "\\project\\Controllers",
     "\\project\\Models"
   ],
-  "SelectedNode": "\\project\\Program.cs",
+  "SelectedNode": "\\project\\project.csproj",
   "PreviewInSolutionExplorer": false
 }

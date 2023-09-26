@@ -12,8 +12,8 @@ using project.Models;
 namespace project.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230924122938_creation-of-tables")]
-    partial class creationoftables
+    [Migration("20230925153722_NewTableCreation")]
+    partial class NewTableCreation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,12 +79,16 @@ namespace project.Migrations
 
                     b.Property<string>("SurgeryCategory")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(3)");
 
                     b.Property<DateTime>("SurgeryDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("SurgeryId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("SurgeryCategory");
 
                     b.ToTable("Surgery");
                 });
@@ -116,6 +120,19 @@ namespace project.Migrations
                     b.HasOne("project.Models.Specialization", null)
                         .WithMany()
                         .HasForeignKey("SpecializationCode")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("project.Models.ISurgery", b =>
+                {
+                    b.HasOne("project.Models.IDoctor", null)
+                        .WithMany()
+                        .HasForeignKey("DoctorId");
+
+                    b.HasOne("project.Models.Specialization", null)
+                        .WithMany()
+                        .HasForeignKey("SurgeryCategory")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

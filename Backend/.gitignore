@@ -1,0 +1,153 @@
+# Visual Studio files
+
+*.suo
+
+*.user
+
+*.sln.docstates
+
+ 
+
+# Rider files
+
+.idea/
+
+.idea/workspace.xml
+
+.idea/tasks.xml
+
+ 
+
+# Compiled binary files
+
+bin/
+
+obj/
+
+ 
+
+# User-specific files and directories
+
+*.user
+
+*.suo
+
+*.userprefs
+
+*.sln.docstates
+
+*.suo
+
+_ReSharper*/
+
+ 
+
+# Packages folder created by NuGet Package Manager
+
+packages/
+
+ 
+
+# User-specific files
+
+*.suo
+
+*.user
+
+*.userosscache
+
+*.sln.docstates
+
+ 
+
+# Mac files
+
+.DS_Store
+
+ 
+
+# Windows image file caches
+
+Thumbs.db
+
+ 
+
+# .NET Core
+
+project.lock.json
+
+project.fragment.lock.json
+
+artifacts/
+
+ 
+
+# Visual Studio Code folders
+
+.vscode/
+
+ 
+
+# Rider files
+
+.idea/
+
+ 
+
+# User-specific files
+
+*.suo
+
+*.user
+
+*.sln.docstates
+
+ 
+
+# User-specific files
+
+*.suo
+
+*.user
+
+*.userosscache
+
+*.sln.docstates
+
+ 
+
+# Rider settings
+
+.idea/workspace.xml
+
+.idea/tasks.xml
+
+ 
+
+# User-specific files
+
+*.suo
+
+*.user
+
+*.userprefs
+
+*.sln.docstates
+
+ 
+
+# .NET Scaffolding
+
+ScaffoldingReadMe.txt
+
+ 
+
+# User-specific files
+
+*.suo
+
+*.user
+
+*.userprefs
+
+*.sln.docstates

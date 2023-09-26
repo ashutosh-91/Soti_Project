@@ -13,6 +13,8 @@ namespace project.Models
             modelBuilder.Entity<DoctorSpecialization>().HasKey(e => new { e.DoctorId,e.SpecializationCode});
             modelBuilder.Entity<DoctorSpecialization>().HasOne<IDoctor>().WithMany().HasForeignKey(d => d.DoctorId);
             modelBuilder.Entity<DoctorSpecialization>().HasOne<Specialization>().WithMany().HasForeignKey(d => d.SpecializationCode);
+            modelBuilder.Entity<ISurgery>().HasOne<IDoctor>().WithMany().HasForeignKey(d => d.DoctorId);
+            modelBuilder.Entity<ISurgery>().HasOne<Specialization>().WithMany().HasForeignKey(d => d.SurgeryCategory);
         }
         public DbSet<IDoctor> Doctors { get; set; }
         public DbSet<Specialization> Specializations { get; set; }

@@ -1,20 +1,29 @@
-.navbar-nav, .mr-auto {
-    flex: 1;
-    margin: auto !important;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
+.navbar-nav,
+.mr-auto {
+  flex: 1;
+  margin: auto !important;
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 15px;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 button {
-    width: 70px;
-    height: 50px;
-  }
-  
-  button:hover {
-    transform: scale(1.2);
-  }
+  width: 70px;
+  height: 50px;
+}
 
-  h4{
-    color: gainsboro;
-  }
+button:hover {
+  transform: scale(1.2);
+}
+
+h4 {
+  color: gainsboro;
+}
+
+.active-link{
+  background-color: rgb(47, 139, 219);
+  border-radius: 50px;
+}

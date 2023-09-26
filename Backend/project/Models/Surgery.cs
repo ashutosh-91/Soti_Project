@@ -8,7 +8,7 @@ namespace project.Models
         [Key]
         public int SurgeryId { get; set; }
         
-        [ForeignKey("Doctor")]
+       
         public int? DoctorId { get; set; }
         [Column(TypeName = "decimal(4,2)")]
         public decimal EndTime { get; set; }

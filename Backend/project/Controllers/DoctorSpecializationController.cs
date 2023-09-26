@@ -26,5 +26,19 @@ namespace project.Controllers
                 return NotFound();
             }
         }
+
+        [HttpPost]
+        public ActionResult Post(DoctorSpecialization doctorSpecialization)
+        {
+            var data = doctorSpecializationRepository.AddDoctorSpecialization(doctorSpecialization);
+            if (data == true)
+            {
+                return Ok(true);
+            }
+            else
+            {
+                return NotFound(false);
+            }
+        }
     }
 }

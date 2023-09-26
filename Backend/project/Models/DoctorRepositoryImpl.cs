@@ -11,29 +11,46 @@ namespace project.Models
         }
         public bool AddDoctor(IDoctor doctor)
         {
-            _context.Doctors.Add(doctor);
-            int rows=_context.SaveChanges();
-            if (rows > 0)
+            try
             {
-                return true;
-            }
-            return false;
-        }
 
-        public bool DeleteDoctor(int id)
-        {
-            var doctor = _context.Doctors.FirstOrDefault(x => x.DoctorId == id);
-            
-            if (doctor != null)
-            {
-                _context.Doctors.Remove(doctor);
+
+                _context.Doctors.Add(doctor);
                 int rows = _context.SaveChanges();
                 if (rows > 0)
                 {
                     return true;
                 }
+                return false;
+            } catch (Exception ex)
+            {
+                return false;
             }
-            return false;
+        
+        }
+
+        public bool DeleteDoctor(int id)
+        {
+            try
+            {
+                var doctor = _context.Doctors.FirstOrDefault(x => x.DoctorId == id);
+
+                if (doctor != null)
+                {
+                    _context.Doctors.Remove(doctor);
+                    int rows = _context.SaveChanges();
+                    if (rows > 0)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            
         }
 
         public List<IDoctor> GetAllDoctors()
@@ -43,14 +60,22 @@ namespace project.Models
 
         public bool UpdateDoctorDetails(IDoctor doctor)
         {
-            var doc = _context.Doctors.FirstOrDefault(x => x.DoctorId == doctor.DoctorId);
-            doc.DoctorName = doctor.DoctorName;
-            int rows = _context.SaveChanges();
-            if (rows > 0)
+            try
             {
-                return true;
+                var doc = _context.Doctors.FirstOrDefault(x => x.DoctorId == doctor.DoctorId);
+                doc.DoctorName = doctor.DoctorName;
+                int rows = _context.SaveChanges();
+                if (rows > 0)
+                {
+                    return true;
+                }
+                return false;
             }
-            return false;
+            catch (Exception ex)
+            {
+                return false;
+            }
+           
 
         }
     }

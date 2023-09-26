@@ -11,26 +11,40 @@ namespace project.Models
         }
         public bool AddSpecialization(Specialization specialization)
         {
-            _context.Specializations.Add(specialization);
-            int rows = _context.SaveChanges();
-            if (rows > 0)
+            try
             {
-                return true;
+
+
+                _context.Specializations.Add(specialization);
+                int rows = _context.SaveChanges();
+                if (rows > 0)
+                {
+                    return true;
+                }
+            } catch (Exception ex)
+            {
+                return false;
             }
             return false;
         }
 
         public bool DeleteSpecialization(string code)
         {
-            var specialization = _context.Specializations.FirstOrDefault(x => x.SpecializationCode == code);
-            if (specialization != null)
+            try
             {
-                _context.Specializations.Remove(specialization);
-                int rows = _context.SaveChanges();
-                if (rows > 0)
+                var specialization = _context.Specializations.FirstOrDefault(x => x.SpecializationCode == code);
+                if (specialization != null)
                 {
-                    return true;
+                    _context.Specializations.Remove(specialization);
+                    int rows = _context.SaveChanges();
+                    if (rows > 0)
+                    {
+                        return true;
+                    }
                 }
+            }
+            catch (Exception ex) {
+                return false;
             }
             return false;
         }
@@ -51,14 +65,18 @@ namespace project.Models
 
         public bool UpdateSpecialization(Specialization specialization)
         {
-            var data = GetSpecializationByCode(specialization.SpecializationCode);
-            data.SpecializationCode = specialization.SpecializationCode;
-            data.SpecializationName = specialization.SpecializationName;
-            int rows = _context.SaveChanges();
-            if (rows > 0)
+            try
             {
-                return true;
+                var data = GetSpecializationByCode(specialization.SpecializationCode);
+                data.SpecializationCode = specialization.SpecializationCode;
+                data.SpecializationName = specialization.SpecializationName;
+                int rows = _context.SaveChanges();
+                if (rows > 0)
+                {
+                    return true;
+                }
             }
+            catch (Exception ex) { return false; }
             return false;
         }
 
