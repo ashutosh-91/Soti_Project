@@ -12,6 +12,8 @@ import { DataService } from 'src/app/services/data.service';
 export class UpdateSurgeryComponent {
   surgery: ISurgery;
   surgeryForm!: FormGroup;
+  alertClass = ""
+  textMessage = ""
   constructor(private fb:FormBuilder, private route:Router,private http:DataService){
     this.surgery=route.getCurrentNavigation()?.extras.state?.['data'];
 
@@ -32,9 +34,28 @@ export class UpdateSurgeryComponent {
 
     updateSurgery(){
       console.log(this.surgeryForm.value);
-      this.http.updateSurgery(this.surgeryForm.value).subscribe((data:any)=>{
-        console.log(this.surgeryForm);
-      });
+      this.http.updateSurgery(this.surgeryForm.value).subscribe(
+        (data: any) => { 
+          if (data == true){
+          //On successful excecution of service
+          this.textMessage = 'Surgery details updtaed Successfully';
+          this.alertClass = 'alert alert-success';
+          console.log(this.textMessage);
+
+        }else{this.textMessage = 'Surgery details updated successfully';
+        this.alertClass = 'alert alert-danger';
+        console.log(this.textMessage);
+      }},
+        
+        (error: any) => {
+          //In case of error
+          this.textMessage = 'Some error occured';
+          this.alertClass = 'alert alert-danger';
+          console.error(this.textMessage);
+        }
+    );
+
+      
       this.route.navigate(['/todaySurgery'])
     }
   

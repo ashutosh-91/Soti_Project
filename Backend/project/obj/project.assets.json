@@ -8346,23 +8346,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aalappat\\.nuget\\packages\\": {},
+    "C:\\Users\\aamudala\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\project.csproj",
+      "projectUniqueName": "C:\\Users\\Project\\Soti_Project\\Backend\\project\\project.csproj",
       "projectName": "project",
-      "projectPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\project.csproj",
-      "packagesPath": "C:\\Users\\aalappat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\obj\\",
+      "projectPath": "C:\\Users\\Project\\Soti_Project\\Backend\\project\\project.csproj",
+      "packagesPath": "C:\\Users\\aamudala\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Project\\Soti_Project\\Backend\\project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aalappat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aamudala\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
