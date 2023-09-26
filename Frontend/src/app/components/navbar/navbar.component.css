@@ -1,6 +1,6 @@
 .navbar-nav,
 .mr-auto {
-  flex: 1;
+  flex: 0.9;
   margin: auto !important;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 }
 
 button {
-  width: 70px;
+  width: 100px;
   height: 50px;
 }
 

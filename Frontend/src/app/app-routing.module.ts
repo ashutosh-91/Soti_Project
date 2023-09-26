@@ -11,7 +11,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { AuthGuard } from './gaurd/auth.guard';
 
 const routes: Routes=[{path:'', redirectTo: 'home', pathMatch: 'full'},
-{ path: 'home', component: ViewDoctorComponent },
+{ path: 'home', component: ViewDoctorComponent,  canActivate: [AuthGuard] },
 { path: 'doctor/:docId', component: UpdateDoctorComponent, canActivate: [AuthGuard] },
 { path: 'specialization', component: ViewSpecializationComponent },
 { path: 'specialization/:specializationCode', component: ViewDoctorComponent, canActivate: [AuthGuard] },
