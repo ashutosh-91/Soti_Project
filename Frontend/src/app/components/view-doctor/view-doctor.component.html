@@ -1,46 +1,48 @@
-<br>
-<br>
+<section class="container text-center parent">
+  <div class="container child">
+    <h1 class="display-4">View Doctors</h1>
+    <br>
 
-<div class="container">
-  <h1 class="text-center"> View Doctor </h1>
-  <table border="1" class="table center">
-    <thead class="thead thead-dark">
-      <tr>
-        <th>Doctor ID</th>
-        <th>Doctor Name</th>
-        <th>Action</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let doctor of doctors">
-        <td>{{doctor.doctorId}}</td>
-        <td>{{doctor.doctorName}}</td>
-        <td>
-          <button (click)="editDoctor(doctor)" class="btn btn-primary">Edit Doctor Details</button>
-        </td>
-        <td>
-          <button (click)="deleteDoctor(doctor.doctorId)" class="btn btn-danger">Remove Doctor</button>
+    <table border="1" class="table table-bordered center">
+      <thead class="thead thead-dark">
+        <tr>
+          <th>Doctor ID</th>
+          <th>Doctor Name</th>
+          <th>Action</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let doctor of doctors">
+          <td>{{doctor.doctorId}}</td>
+          <td>{{doctor.doctorName}}</td>
+          <td>
+            <button (click)="editDoctor(doctor)" class="btn btn-primary">Edit Doctor Details</button>
+          </td>
+          <td>
+            <button (click)="deleteDoctor(doctor.doctorId)" class="btn btn-danger">Remove Doctor</button>
 
-        </td>
-      </tr>
+          </td>
+        </tr>
 
-    </tbody>
+      </tbody>
 
 
-    <!-- Remove message -->
-    <!-- <div class="card-body" class="alert alert-success " role="alert" *ngIf="deleteMsg" ngModel>
+      <!-- Remove message -->
+      <!-- <div class="card-body" class="alert alert-success " role="alert" *ngIf="deleteMsg" ngModel>
             Removed Doctor SuccessFully !
           </div> -->
 
-    <!-- Fetch message -->
-    <div>
-      <span class="alert alert-danger text-danger" role="alert" *ngIf="!couldFetch">No Doctors Present In the Record..!</span>
-    </div>
+      <!-- Fetch message -->
+      <div>
+        <span class="alert alert-danger text-danger" role="alert" *ngIf="!couldFetch">No Doctors Present In the
+          Record..!</span>
+      </div>
 
-  </table>
-  <br>
-</div>
-<div class="alert  alert-dismissible fade show" role="alert" *ngIf="couldFetch" ngModel>
-  <h5><strong>{{showMsgDiv}}!</strong></h5>
-</div>
+    </table>
+    <br>
+  </div>
+  <div class="alert  alert-dismissible fade show" role="alert" *ngIf="couldFetch" ngModel>
+    <h5><strong>{{showMsgDiv}}!</strong></h5>
+  </div>
+</section>

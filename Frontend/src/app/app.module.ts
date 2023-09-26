@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { ViewDoctorComponent } from './components/view-doctor/view-doctor.compon
 import { ViewSpecializationComponent } from './components/view-specialization/view-specialization.component';
 import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/view-todays-surgery.component';
 import {  HttpClientModule } from "@angular/common/http";
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import {  HttpClientModule } from "@angular/common/http";
     UpdateDoctorComponent,
     LoginPageComponent,
     RegistrationPageComponent,
+    FooterComponent,
 
   ],
   imports: [
@@ -37,7 +40,8 @@ import {  HttpClientModule } from "@angular/common/http";
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
