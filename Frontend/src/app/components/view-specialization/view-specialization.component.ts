@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { faL } from '@fortawesome/free-solid-svg-icons';
 import { ISpecialization } from 'src/app/models/specialization.model';
 import { DataService } from 'src/app/services/data.service';
 
@@ -13,31 +14,33 @@ export class ViewSpecializationComponent {
   specializations!: ISpecialization[];
   alertClass = ""
   textMessage = ""
-  constructor(private http:DataService, private router:Router){}
-  viewDoctor(specialization:any){
+  loading = true;
+  constructor(private http: DataService, private router: Router) { }
+  viewDoctor(specialization: any) {
     console.log(specialization);
-    this.router.navigate(['/specialization',specialization.specializationCode])
+    this.router.navigate(['/specialization', specialization.specializationCode])
   }
 
-  ngOnInit(){
-    this.http.getAllSpecializations().subscribe((data) => {  
-      console.log(data);
-      this.specializations=data;
-    },
-    (response: any) => {
-      //On successful excecution of service
-      this.textMessage = 'Specializations Fetched Successfully';
-      this.alertClass = 'alert alert-success';
-      console.log(this.textMessage);
-    }),
+  ngOnInit() {
+    this.http.getAllSpecializations().subscribe(
 
-    (error: any) => {
-      //In case of error
-      this.textMessage = 'Error fetching Specializations';
-      this.alertClass = 'alert alert-danger';
-      console.error(this.textMessage);
-    }; 
-  }
+      (response) => {
+        this.loading = false;
 
- 
+        //On successful excecution of service
+        this.textMessage = 'Specializations Fetched Successfully';
+        this.alertClass = 'alert alert-success';
+        console.log(this.textMessage);
+      },
+
+      (error) => {
+        this.loading = false;
+
+        //In case of error
+        this.textMessage = 'Error fetching Specializations';
+        this.alertClass = 'alert alert-danger';
+        console.error(this.textMessage);
+      });
+  }
+
 }

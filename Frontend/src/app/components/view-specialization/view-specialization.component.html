@@ -6,7 +6,7 @@
             {{textMessage}}
         </div>
         <br>
-        <table class="table center table-bordered">
+        <table class="table center table-bordered" *ngIf="!loading">
             <thead class="thead-dark">
                 <tr>
                     <th>Specialization Code</th>
@@ -24,5 +24,8 @@
                 </tr>
             </tbody>
         </table>
+        
     </div>
 </section>
+<br>
+<app-spinner *ngIf="loading"></app-spinner>
