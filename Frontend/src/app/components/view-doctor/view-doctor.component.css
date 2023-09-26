@@ -1,12 +1,19 @@
 .center {
-
     margin-left: auto;
-
     margin-right: auto;
-
     text-align: center;
-
 }
+
+.parent {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 82vh; */
+    padding-top: 25vh;
+    max-width: 1000px;
+    min-height: 50vh; 
+}
+
 
 button {
     margin: 10px;
@@ -23,5 +30,9 @@ button {
     top: auto;
     left: 40%;
 }
+
+
+
+
 
 
