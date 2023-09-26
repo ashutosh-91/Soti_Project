@@ -8,17 +8,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link h5" routerLink="/home">View Doctors<span class="sr-only">(current)</span></a>
+                <a class="nav-link h5" routerLink="/home"><h4>View Doctors</h4><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link h5" routerLink="/specialization"><h4>View Specializations</h4></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link h5" routerLink="/todaySurgery"><h4>View Today's Surgery</h4></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link h5" routerLink="/specialization">View Specializations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link h5" routerLink="/todaySurgery">View Today's Surgery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link h5" routerLink="/addDoctor">Add Doctor</a>
+                <a class="nav-link h5" routerLink="/addDoctor"><h4>Add Doctor</h4></a>
             </li>
         </ul>
+
+        <div class="form-inline my-2 my-lg-0">
+            <button *ngIf="!isLoggedIn" (click)="onLogin()" class="btn btn-primary"> Login</button>
+            <button *ngIf="isLoggedIn" (click)="onLogout()" class="btn btn-danger"> Logout</button>
+          </div>
+    
     </div>
 </nav>
