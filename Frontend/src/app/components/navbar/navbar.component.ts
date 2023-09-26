@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import { faHospital } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -26,4 +28,7 @@ export class NavbarComponent {
     this.authService.logout();
     this.router.navigateByUrl('login')
   }
+  faHospital=faHospital;
+
+
 }

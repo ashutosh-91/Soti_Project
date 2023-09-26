@@ -1,6 +1,6 @@
 <section class="container text-center parent">
     <div class="container child">
-        <h1 class="display-4">View Specializations</h1>
+        <h1 class="display-4 ">View Specializations</h1>
         <br>
         <div class="{{ alertClass}}" role="alert">
             {{textMessage}}
@@ -16,11 +16,11 @@
             </thead>
             <tbody>
                 <tr *ngFor="let specialization of specializations">
-                    <th>{{specialization.specializationCode}}</th>
-                    <th>{{specialization.specializationName}}</th>
-                    <th>
+                    <td>{{specialization.specializationCode}}</td>
+                    <td>{{specialization.specializationName}}</td>
+                    <td>
                         <button class="btn btn-primary" (click)="viewDoctor(specialization)">View Doctors</button>
-                    </th>
+                    </td>
                 </tr>
             </tbody>
         </table>

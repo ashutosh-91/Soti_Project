@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Doctor } from 'src/app/models/doctorClass.model';
 import { DataService } from 'src/app/services/data.service';
+
+
 @Component({
   selector: 'app-add-doctor',
   templateUrl: './add-doctor.component.html',
