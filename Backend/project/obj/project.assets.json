@@ -8346,39 +8346,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\aakash\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\aalappat\\.nuget\\packages\\": {},
->>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
+    "C:\\Users\\assharma\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Capstone\\Soti_Project\\Backend\\project\\project.csproj",
+      "projectUniqueName": "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj",
       "projectName": "project",
-      "projectPath": "C:\\Capstone\\Soti_Project\\Backend\\project\\project.csproj",
-      "packagesPath": "C:\\Users\\aakash\\.nuget\\packages\\",
-      "outputPath": "C:\\Capstone\\Soti_Project\\Backend\\project\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\project.csproj",
-      "projectName": "project",
-      "projectPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\project.csproj",
-      "packagesPath": "C:\\Users\\aalappat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aalappat\\OneDrive - SOTI Inc\\Desktop\\SOTI Training\\Project\\Soti_Project\\Backend\\project\\obj\\",
->>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
+      "projectPath": "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj",
+      "packagesPath": "C:\\Users\\assharma\\.nuget\\packages\\",
+      "outputPath": "C:\\Training_SOTI\\CureWell\\Backend\\project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\aakash\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\aalappat\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
+        "C:\\Users\\assharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8387,7 +8371,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8448,15 +8431,17 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
->>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
       }
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Training_SOTI\\CureWell\\Backend\\project\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
