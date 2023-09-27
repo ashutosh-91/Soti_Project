@@ -9,17 +9,9 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = project
 build_property.RootNamespace = project
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\Project\Soti_Project\Backend\project\
+build_property.ProjectDir = C:\new Curewell\Soti_Project\Backend\project\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Project\Soti_Project\Backend\project
-=======
-build_property.ProjectDir = C:\Training_SOTI\CureWell\Backend\project\
-build_property.RazorLangVersion = 6.0
-build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Training_SOTI\CureWell\Backend\project
->>>>>>> 76bbffe3b1076894a0f0da7a3b5f5424bf2cab48
+build_property.MSBuildProjectDirectory = C:\new Curewell\Soti_Project\Backend\project
 build_property._RazorSourceGeneratorDebug = 

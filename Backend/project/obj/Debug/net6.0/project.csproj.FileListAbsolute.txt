@@ -651,7 +651,6 @@ C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project
 C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.pdb
 C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.genruntimeconfig.cache
 C:\Users\aalappat\OneDrive - SOTI Inc\Desktop\SOTI Training\Project\Soti_Project\Backend\project\obj\Debug\net6.0\ref\project.dll
-<<<<<<< HEAD
 C:\Users\Project\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Project\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.json
 C:\Users\Project\Soti_Project\Backend\project\bin\Debug\net6.0\project.exe
@@ -745,6 +744,98 @@ C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\refint\project.dl
 C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.pdb
 C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\project.genruntimeconfig.cache
 C:\Users\Project\Soti_Project\Backend\project\obj\Debug\net6.0\ref\project.dll
-=======
 >>>>>>> a6ff44d5a2ca9dd3a424897fa350591c2ab9306b
 >>>>>>> 76bbffe3b1076894a0f0da7a3b5f5424bf2cab48
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.Development.json
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\appsettings.json
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\project.exe
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\project.deps.json
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\project.runtimeconfig.json
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\project.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\project.pdb
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Azure.Core.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Azure.Identity.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Humanizer.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Web.Cors.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Web.Http.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.CodeDom.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Memory.Data.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Text.Json.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\new Curewell\Soti_Project\Backend\project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.csproj.AssemblyReference.cache
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.GeneratedMSBuildEditorConfig.editorconfig
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.AssemblyInfoInputs.cache
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.AssemblyInfo.cs
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.csproj.CoreCompileInputs.cache
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.MvcApplicationPartsAssemblyInfo.cs
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.MvcApplicationPartsAssemblyInfo.cache
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.project.Microsoft.AspNetCore.StaticWebAssets.props
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.build.project.props
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.project.props
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.project.props
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets.pack.json
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets.build.json
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\staticwebassets.development.json
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\scopedcss\bundle\project.styles.css
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.csproj.CopyComplete
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.dll
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\refint\project.dll
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.pdb
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\project.genruntimeconfig.cache
+C:\new Curewell\Soti_Project\Backend\project\obj\Debug\net6.0\ref\project.dll

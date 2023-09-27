@@ -1,41 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Project\\Soti_Project\\Backend\\project\\project.csproj": {}
+    "C:\\new Curewell\\Soti_Project\\Backend\\project\\project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Project\\Soti_Project\\Backend\\project\\project.csproj": {
+    "C:\\new Curewell\\Soti_Project\\Backend\\project\\project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Project\\Soti_Project\\Backend\\project\\project.csproj",
+        "projectUniqueName": "C:\\new Curewell\\Soti_Project\\Backend\\project\\project.csproj",
         "projectName": "project",
-        "projectPath": "C:\\Users\\Project\\Soti_Project\\Backend\\project\\project.csproj",
-        "packagesPath": "C:\\Users\\aamudala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Project\\Soti_Project\\Backend\\project\\obj\\",
-=======
-    "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj": {}
-  },
-  "projects": {
-    "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj",
-        "projectName": "project",
-        "projectPath": "C:\\Training_SOTI\\CureWell\\Backend\\project\\project.csproj",
-        "packagesPath": "C:\\Users\\assharma\\.nuget\\packages\\",
-        "outputPath": "C:\\Training_SOTI\\CureWell\\Backend\\project\\obj\\",
->>>>>>> 76bbffe3b1076894a0f0da7a3b5f5424bf2cab48
+        "projectPath": "C:\\new Curewell\\Soti_Project\\Backend\\project\\project.csproj",
+        "packagesPath": "C:\\Users\\aakash\\.nuget\\packages\\",
+        "outputPath": "C:\\new Curewell\\Soti_Project\\Backend\\project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\aamudala\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\assharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 76bbffe3b1076894a0f0da7a3b5f5424bf2cab48
+          "C:\\Users\\aakash\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -104,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

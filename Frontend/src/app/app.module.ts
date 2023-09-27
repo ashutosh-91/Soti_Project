@@ -16,6 +16,10 @@ import { ViewDoctorComponent } from './components/view-doctor/view-doctor.compon
 import { ViewSpecializationComponent } from './components/view-specialization/view-specialization.component';
 import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/view-todays-surgery.component';
 import {  HttpClientModule } from "@angular/common/http";
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { HeaderComponent } from './components/header/header.component';
+
+
 
 
 @NgModule({
@@ -30,7 +34,9 @@ import {  HttpClientModule } from "@angular/common/http";
     UpdateDoctorComponent,
     LoginPageComponent,
     RegistrationPageComponent,
-
+    HomePageComponent,
+    HeaderComponent
+  
   ],
   imports: [
     BrowserModule,
