@@ -22,7 +22,7 @@ export class UpdateDoctorComponent {
 
     console.log(this.doctorModel);
     this.dataService.updateDoctor(this.doctorModel).subscribe(
-      (response: any) => {
+      (response) => {
         //On successful excecution of service
         // this.textMessage = 'Updated successfully right now';
         // this.alertClass = 'alert alert-success';
@@ -32,7 +32,7 @@ export class UpdateDoctorComponent {
         this.router.navigate(['/home']);
       },
 
-      (error: any) => {
+      (error) => {
         //In case of error
         // this.textMessage = 'Some error occured';
         // this.alertClass = 'alert alert-danger';

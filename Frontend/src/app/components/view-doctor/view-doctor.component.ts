@@ -96,7 +96,7 @@ export class ViewDoctorComponent {
   deleteDoctor(doctor: Number) {
     // console.log(typeof(doctor))
     this.http.deleteDoctor(doctor).subscribe(
-      (data: any) => {
+      (data) => {
         //  this.deleteMsg=data;
         this.http.getAllDoctors().subscribe((data: any) => {
           this.doctors = data;
@@ -104,7 +104,7 @@ export class ViewDoctorComponent {
         Swal.fire('Successfully Updated', '', 'success')
         //  console.log(data)
       },
-      (error: any) => {
+      (error) => {
         //In case of error
 
 
