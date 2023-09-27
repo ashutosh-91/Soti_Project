@@ -18,8 +18,6 @@ export class ViewDoctorComponent {
   showMsgDiv: string = '';
   couldFetch = true;
   loading=true;
-  textMessage = ""
-  alertClass = ""
   
   constructor(private http: DataService, private router: Router, private activatedRoute: ActivatedRoute) {
     try {
@@ -37,7 +35,7 @@ export class ViewDoctorComponent {
   ngOnInit() {
     if (this.category == null) {
       this.http.getAllDoctors().subscribe(
-        (data: any) => {
+        (data) => {
         this.loading=false;
         console.log(data);
         this.doctors = data;
@@ -57,7 +55,7 @@ export class ViewDoctorComponent {
         //till here
 
       },
-      (error: any)=>{
+      (error)=>{
         this.loading=false;
       }
       );
@@ -66,7 +64,7 @@ export class ViewDoctorComponent {
     }
     else {
       this.http.getDoctorSpecialization(this.category).subscribe(
-        (data: any) => {
+        (data) => {
           this.loading=false;
         this.doctorIds = data;
         console.log(this.doctorIds);
@@ -81,7 +79,7 @@ export class ViewDoctorComponent {
         });
 
       },
-      (error: any)=>{
+      (error)=>{
         this.loading=false;
       }
       
@@ -100,28 +98,18 @@ export class ViewDoctorComponent {
     this.http.deleteDoctor(doctor).subscribe(
       (data: any) => {
         //  this.deleteMsg=data;
-        this.http.getAllDoctors().subscribe(
-          (data: any) => {
-          if (data == true){
-            //On successful excecution of service
-            this.textMessage = 'Doctors details deleted Successfully';
-            this.alertClass = 'alert alert-success';
-            console.log(this.textMessage);
-  
-          }else{this.textMessage = 'Doctors name not deleted';
-          this.alertClass = 'alert alert-danger';
-          console.log(this.textMessage);
-        }},
-          
-          (error: any) => {
-            //In case of error
-            this.textMessage = 'Some error occured';
-            this.alertClass = 'alert alert-danger';
-            console.error(this.textMessage);
-          }
-      );
-         });
-        
+        this.http.getAllDoctors().subscribe((data: any) => {
+          this.doctors = data;
+        });
+        Swal.fire('Successfully Updated', '', 'success')
         //  console.log(data)
-       }
-  }
+      },
+      (error: any) => {
+        //In case of error
+
+
+        Swal.fire('Failed to Update', '', 'error')
+      }
+    )
+  }
+}
