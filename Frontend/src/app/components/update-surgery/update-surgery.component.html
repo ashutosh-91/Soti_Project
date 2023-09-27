@@ -54,7 +54,13 @@
             <input type="text"  class="form-control" id="surgeryCategory" formControlName="surgeryCategory" placeholder="Surgery Category">
           </div>
         </div>
-        <input type="submit" value="Update">
-        <a href="" style="margin-left: 10px; color: rgb(92, 24, 92);"><u>Cancel</u> </a>
+        <br>
+        <div class="form-group row" *ngIf="!loading">
+          <!-- <label class="col-2"></label> -->
+          <button type="submit" [disabled]="surgeryForm.invalid"  class="col-3 btn-lg btn btn-primary">Add Doctor</button>
+          <label class="col-1"></label>
+          <a routerLink='/home' class="col-3 btn-lg btn btn-danger">Cancel</a>
+          <label class="col-2"></label>
+      </div>
     </form>
 </div>

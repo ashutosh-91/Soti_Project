@@ -18,33 +18,33 @@ export class DataService {
   //Change the port Number Whoever is running The Backend ~AS 
 
     
-    // return this.http.get<IDoctor[]>('https://localhost:7170/api/Doctor');
-    return this.http.get<IDoctor[]>('https://localhost:44396/api/Doctor');
+    return this.http.get<IDoctor[]>('https://localhost:7170/api/Doctor');
+    // return this.http.get<IDoctor[]>('https://localhost:44396/api/Doctor');
 
   }
-  deleteDoctor(doctor: any):any{
+  deleteDoctor(doctor: Number):Observable<boolean>{
    
-    return this.http.delete('https://localhost:7170/api/Doctor/'+doctor);
+    return this.http.delete<boolean>('https://localhost:7170/api/Doctor/'+doctor);
     //return this.http.delete('https://localhost:44396/api/Doctor/'+doctor);
   }
-  updateDoctor(doctor: any):any{
-    return this.http.put('https://localhost:7170/api/Doctor',doctor);
+  updateDoctor(doctor: Doctor):Observable<boolean>{
+    return this.http.put<boolean>('https://localhost:7170/api/Doctor',doctor);
     //return this.http.put('https://localhost:44396/api/Doctor',doctor);
   }
-  addDoctor(doctor:Doctor):Observable<Doctor>{
-    return this.http.post<Doctor>('https://localhost:7170/api/Doctor',doctor);
+  addDoctor(doctor:Doctor):Observable<boolean>{
+    return this.http.post<boolean>('https://localhost:7170/api/Doctor',doctor);
     //return this.http.post('https://localhost:44396/api/Doctor',doctor);
   }
   getAllSpecializations():Observable<ISpecialization[]>{
-    // return this.http.get<ISpecialization[]>('https://localhost:7170/api/Specialization');
-    return this.http.get<ISpecialization[]>('https://localhost:44396/api/Specialization');
+    return this.http.get<ISpecialization[]>('https://localhost:7170/api/Specialization');
+    // return this.http.get<ISpecialization[]>('https://localhost:44396/api/Specialization');
   }
   getAllSurgeries():Observable<ISurgery[]>{
     return this.http.get<ISurgery[]>('https://localhost:7170/api/Surgery');
     //return this.http.get('https://localhost:44396/api/Surgery');
   }
-  updateSurgery(surgery:any):any{
-    return this.http.put('https://localhost:7170/api/Surgery',surgery);
+  updateSurgery(surgery:ISurgery):Observable<boolean>{
+    return this.http.put<boolean>('https://localhost:7170/api/Surgery',surgery);
     //return this.http.put('https://localhost:44396/api/Surgery',surgery);
   }
   getDoctorSpecialization(specializationCode :string):Observable<IDoctorSpecialization[]>{

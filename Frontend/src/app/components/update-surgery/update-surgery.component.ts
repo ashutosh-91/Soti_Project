@@ -36,13 +36,14 @@ export class UpdateSurgeryComponent {
   updateSurgery() {
     console.log(this.surgeryForm.value);
     this.http.updateSurgery(this.surgeryForm.value).subscribe(
-      (data: any) => {
+      (data) => {
         if (data == true) {
           //On successful excecution of service
           // this.textMessage = 'Surgery details updtaed Successfully';
           // this.alertClass = 'alert alert-success';
           // console.log(this.textMessage);
           Swal.fire('Successfully Updated', '', 'success')
+          this.route.navigate(['/todaySurgery'])
         }
         else {
           // this.textMessage = 'Surgery details updated successfully';
@@ -52,7 +53,7 @@ export class UpdateSurgeryComponent {
         }
       },
 
-      (error: any) => {
+      (error) => {
         //In case of error
         // this.textMessage = 'Some error occured';
         // this.alertClass = 'alert alert-danger';
@@ -62,7 +63,7 @@ export class UpdateSurgeryComponent {
     );
 
 
-    this.route.navigate(['/todaySurgery'])
+    
   }
 
   // get f() { 
