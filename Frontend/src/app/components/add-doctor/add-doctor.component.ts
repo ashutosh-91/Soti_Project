@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Doctor } from 'src/app/models/doctorClass.model';
 import { DataService } from 'src/app/services/data.service';
 import Swal from 'sweetalert2';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class AddDoctorComponent {
   // alertClass = ""
   loading=false;
   doctorModel=new Doctor();
+  addDoctorResponse:boolean=true;
   constructor(private dataService:DataService, private router:Router){
 
   }
@@ -32,7 +34,7 @@ export class AddDoctorComponent {
     this.dataService.addDoctor(this.doctorModel).subscribe( 
       (response) => {
     this.loading=false;
-
+    this.addDoctorResponse=response;
         //On successful excecution of service
         // this.textMessage = 'Doctors Fetched Successfully';
         // this.alertClass = 'alert alert-success';
