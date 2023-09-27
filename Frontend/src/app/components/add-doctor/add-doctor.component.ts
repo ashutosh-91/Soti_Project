@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Doctor } from 'src/app/models/doctorClass.model';
 import { DataService } from 'src/app/services/data.service';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -12,36 +13,44 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./add-doctor.component.css']
 })
 export class AddDoctorComponent {
-  message: string = '';
-  textMessage = ""
-  alertClass = ""
+  // message: string = '';
+  // textMessage = ""
+  // alertClass = ""
+  loading=false;
   doctorModel=new Doctor();
   constructor(private dataService:DataService, private router:Router){
 
   }
 
   //added display
-  displayMessage(){
-    this.message = 'Doctor successfully added'
-  }
+  // displayMessage(){
+  //    this.message = 'Doctor successfully added'
+  // }
   addDoctor(){
     console.log(this.doctorModel);
+    this.loading=true;
     this.dataService.addDoctor(this.doctorModel).subscribe( 
-      (response: any) => {
+      (response) => {
+    this.loading=false;
+
         //On successful excecution of service
-        this.textMessage = 'Doctors Fetched Successfully';
-        this.alertClass = 'alert alert-success';
-        console.log(this.textMessage);
+        // this.textMessage = 'Doctors Fetched Successfully';
+        // this.alertClass = 'alert alert-success';
+        // console.log(this.textMessage);
+        Swal.fire('Successfully Inserted','','success')
+        this.router.navigate(['/home']);
       },
 
-      (error: any) => {
+      (error) => {
+        this.loading=false;
         //In case of error
-        this.textMessage = 'Error fetching doctors';
-        this.alertClass = 'alert alert-danger';
-        console.error(this.textMessage);
+        // this.textMessage = 'Error fetching doctors';
+        // this.alertClass = 'alert alert-danger';
+        // console.error(this.textMessage);
+        Swal.fire('Failed to Insert','','error')
       }
   );
      
-     this.router.navigate(['/home']);
+     
   }
 }
