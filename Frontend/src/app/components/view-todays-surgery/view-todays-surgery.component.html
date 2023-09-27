@@ -7,7 +7,7 @@
         </div>
         <br>
 
-        <table border="1" class="table table-bordered center">
+        <table border="1" class="table table-bordered center" *ngIf="!loading">
             <thead class="thead thead-dark">
                 <tr>
                     <th>Surgery Id</th>
@@ -32,6 +32,8 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
+        </table>       
     </div>
 </section>
+<br>
+<app-spinner *ngIf="loading"></app-spinner>

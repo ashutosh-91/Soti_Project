@@ -3,7 +3,7 @@
     <h1 class="display-4">View Doctors</h1>
     <br>
 
-    <table border="1" class="table table-bordered center">
+    <table border="1" class="table table-bordered center" *ngIf="!loading">
       <thead class="thead thead-dark">
         <tr>
           <th>Doctor ID</th>
@@ -43,6 +43,9 @@
     <br>
   </div>
   <div class="alert  alert-dismissible fade show" role="alert" *ngIf="couldFetch" ngModel>
-    <h5><strong>{{showMsgDiv}}!</strong></h5>
+    <h5><strong>{{showMsgDiv}}</strong></h5>
   </div>
+  
 </section>
+<br>
+<app-spinner *ngIf="loading"></app-spinner>

@@ -9,40 +9,39 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./view-todays-surgery.component.css']
 })
 export class ViewTodaysSurgeryComponent {
-  surgeries:ISurgery[]=[];
+  surgeries: ISurgery[] = [];
   alertClass = ""
   textMessage = ""
+  loading = true;
   getTodaySurgery: any;
-  constructor( private router:Router,private dataService:DataService){
-    this.dataService.getAllSurgeries().subscribe((data:any) => {
-        this.surgeries=data;
-      }
-    );
+  constructor(private router: Router, private dataService: DataService) {
   }
-  editSurgery(surgery:any){
+  editSurgery(surgery: any) {
     console.log(surgery);
-    this.router.navigate(['/editSurgery',surgery.surgeryId],{
+    this.router.navigate(['/editSurgery', surgery.surgeryId], {
       state:
-        {data:surgery}    
+        { data: surgery }
     })
   }
-  ngOnInit(){
-    this.getTodaySurgery().subscribe((data: ISurgery[]) => {  
-     console.log(data);
-     this.surgeries=data;
-   },
- (response: any) => {
-   //On successful excecution of service
-   this.textMessage='Specializations Fetched Successfully';
-   this.alertClass='alert alert-success';
-   console.log(this.textMessage);
- },
+  ngOnInit() {
+    this.dataService.getAllSurgeries().subscribe(
 
- (error: any) => {
-   //In case of error
-   this.textMessage='Error fetching Specializations';
-   this.alertClass='alert alert-danger';
-   console.error(this.textMessage);
-  }); 
-}
+      (response) => {
+        //On successful excecution of service
+        this.loading = false;
+        this.textMessage = 'Specializations Fetched Successfully';
+        this.alertClass = 'alert alert-success';
+        this.surgeries = response;
+        console.log(this.textMessage);
+      },
+
+      (error) => {
+        //In case of error
+        this.loading = false;
+
+        this.textMessage = 'Error fetching Specializations';
+        this.alertClass = 'alert alert-danger';
+        console.error(this.textMessage);
+      });
+  }
 }
