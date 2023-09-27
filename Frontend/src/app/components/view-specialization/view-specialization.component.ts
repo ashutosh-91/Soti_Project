@@ -26,6 +26,7 @@ export class ViewSpecializationComponent {
 
       (response) => {
         this.loading = false;
+        this.specializations = response;
 
         //On successful excecution of service
         this.textMessage = 'Specializations Fetched Successfully';

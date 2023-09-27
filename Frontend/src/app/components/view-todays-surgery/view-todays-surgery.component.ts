@@ -38,6 +38,7 @@ export class ViewTodaysSurgeryComponent {
       (error) => {
         //In case of error
         this.loading = false;
+        
 
         this.textMessage = 'Error fetching Specializations';
         this.alertClass = 'alert alert-danger';
