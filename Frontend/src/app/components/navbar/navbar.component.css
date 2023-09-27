@@ -1,3 +1,4 @@
+
 .navbar-nav,
 .mr-auto {
   flex: 0.9;
@@ -24,5 +25,19 @@ h4 {
 }
 
 .active-link h4{
-  color: yellow;
+  color: rgb(255, 0, 0);
 }
+
+h4 {
+  font-size: 24px;
+  color: #333;
+  transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+h4:hover {
+  font-size: 28px; 
+  color: #fff200; 
+}
+
+

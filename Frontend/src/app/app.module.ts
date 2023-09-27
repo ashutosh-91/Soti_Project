@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,10 +17,7 @@ import { ViewDoctorComponent } from './components/view-doctor/view-doctor.compon
 import { ViewSpecializationComponent } from './components/view-specialization/view-specialization.component';
 import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/view-todays-surgery.component';
 import {  HttpClientModule } from "@angular/common/http";
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { HeaderComponent } from './components/header/header.component';
-
-
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -34,16 +32,16 @@ import { HeaderComponent } from './components/header/header.component';
     UpdateDoctorComponent,
     LoginPageComponent,
     RegistrationPageComponent,
-    HomePageComponent,
-    HeaderComponent
-  
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

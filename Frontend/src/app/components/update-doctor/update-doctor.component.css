@@ -1,14 +1,15 @@
-
-
-.add-doctor-parent{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+.parent {
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 82vh; */
+  padding-top: 25vh;
   max-width: 700px;
+  
 }
 
-.centered-text{
+.centered-text {
+  
   text-align: center;
 }
 
