@@ -6,7 +6,12 @@
 
 }
 
- 
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
 
 .card-image{
 
