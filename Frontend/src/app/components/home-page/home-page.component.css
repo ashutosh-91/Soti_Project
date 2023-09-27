@@ -19,7 +19,19 @@
 
 }
 
+.card{
+
+    background-color: rgba(0,0,0,0);
+
+}
+
  
+
+.container{
+
+    opacity: 1;
+
+}
 
 .doc-img{
 
@@ -48,3 +60,4 @@
     /* min-height: 50vh; */
 
 }
+

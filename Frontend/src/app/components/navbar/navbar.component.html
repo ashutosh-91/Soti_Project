@@ -15,30 +15,30 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link h5" routerLink="/doctor" routerLinkActive="active-link">
-                    <h4>View Doctors</h4><span class="sr-only">(current)</span>
+                    <h4><strong>View Doctors</strong></h4><span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link h5 " routerLink="/specialization" routerLinkActive="active-link">
-                    <h4 >View Specializations</h4>
+                    <h4 ><strong>View Specializations</strong></h4>
                 </a>
                
 
             </li>
             <li class="nav-item ">
                 <a class="nav-link h5" routerLink="/todaySurgery" routerLinkActive="active-link">
-                    <h4>View Today's Surgery</h4>
+                    <h4><strong>View Today's Surgery</strong></h4>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link h5" routerLink="/addDoctor" routerLinkActive="active-link">
-                    <h4>Add Doctor</h4>
+                    <h4><strong> Add Doctor</strong></h4>
                 </a>
             </li>
         </ul>
 
         <div class="form-inline my-2 my-lg-0">
-            <button *ngIf="!isLoggedIn" (click)="onLogin()" class="btn btn-primary"> Login</button>
+            <button *ngIf="!isLoggedIn" (click)="onLogin()"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> Login</button>
             <button *ngIf="isLoggedIn" (click)="onLogout()" class="btn btn-danger"> Logout</button>
         </div>
     </div>

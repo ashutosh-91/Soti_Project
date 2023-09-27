@@ -15,21 +15,21 @@ nav{
   padding-right: 6rem;
 }
 
-button {
+/* button {
   width: 100px;
   height: 50px;
-}
+} */
 
 button:hover {
   transform: scale(1.2);
 }
 
 h4 {
-  color: gainsboro;
+  color: rgb(19, 14, 14);
 }
 
 .active-link h4{
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 h4 {
@@ -41,7 +41,7 @@ h4 {
 
 h4:hover {
   font-size: 28px; 
-  color: white; 
+  color: #fff200; 
 }
 
 

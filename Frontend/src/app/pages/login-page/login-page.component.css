@@ -1,7 +1,7 @@
 .wrapper{
-    background: hsl(218deg 50% 91%);
+    background: hsl(225, 17%, 95%);
     padding: 30px;
     margin-top: 80px;
     border-radius: 10px;
-    box-shadow: 10px 5px #888,
+    box-shadow: 10px 5px #eae5e5,
 }
