@@ -15,6 +15,7 @@ export class UpdateSurgeryComponent {
   surgeryForm!: FormGroup;
   // alertClass = ""
   // textMessage = ""
+  loading=false;
   constructor(private fb: FormBuilder, private route: Router, private http: DataService) {
     this.surgery = route.getCurrentNavigation()?.extras.state?.['data'];
 
@@ -34,15 +35,19 @@ export class UpdateSurgeryComponent {
   }
 
   updateSurgery() {
+    this.loading=true;
     console.log(this.surgeryForm.value);
     this.http.updateSurgery(this.surgeryForm.value).subscribe(
-      (data: any) => {
+      (data) => {
+        this.loading=false;
         if (data == true) {
+         
           //On successful excecution of service
           // this.textMessage = 'Surgery details updtaed Successfully';
           // this.alertClass = 'alert alert-success';
           // console.log(this.textMessage);
           Swal.fire('Successfully Updated', '', 'success')
+          this.route.navigate(['/todaySurgery'])
         }
         else {
           // this.textMessage = 'Surgery details updated successfully';
@@ -52,17 +57,18 @@ export class UpdateSurgeryComponent {
         }
       },
 
-      (error: any) => {
+      (error) => {
         //In case of error
         // this.textMessage = 'Some error occured';
         // this.alertClass = 'alert alert-danger';
         // console.error(this.textMessage);
+        this.loading=false;
         Swal.fire('Failed to Update','','error')
       }
     );
 
 
-    this.route.navigate(['/todaySurgery'])
+    
   }
 
   // get f() { 

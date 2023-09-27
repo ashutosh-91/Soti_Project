@@ -7,7 +7,7 @@ export function timeCheck(StartTime: string, EndTime: string) {
         if (!startTime || !endTime) {
             return null;
         }
-        if(startTime.errors){
+        if(startTime.errors||endTime.errors){
            return null;
         }
         console.log("a= "+startTime.value)
