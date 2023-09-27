@@ -1,6 +1,6 @@
 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light   bg-info">
     
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" routerLink="/home">
     <fa-icon class="col-2 pt-2 connect " [icon]="faHospital"></fa-icon>
        
         <p class="h1 font-italic font-weight-bold">CureWell</p>
@@ -14,7 +14,7 @@
     <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link h5" routerLink="/home" routerLinkActive="active-link">
+                <a class="nav-link h5" routerLink="/doctor" routerLinkActive="active-link">
                     <h4>View Doctors</h4><span class="sr-only">(current)</span>
                 </a>
             </li>

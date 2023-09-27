@@ -19,7 +19,7 @@ import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/vie
 import {  HttpClientModule } from "@angular/common/http";
 import { FooterComponent } from './components/footer/footer.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
-
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 
 @NgModule({
@@ -35,6 +35,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     LoginPageComponent,
     RegistrationPageComponent,
     FooterComponent,
+    HomePageComponent,
     SpinnerComponent
 
   ],
