@@ -15,21 +15,21 @@ nav{
   padding-right: 6rem;
 }
 
-button {
+/* button {
   width: 100px;
   height: 50px;
-}
+} */
 
 button:hover {
   transform: scale(1.2);
 }
 
 h4 {
-  color: gainsboro;
+  color: rgb(19, 14, 14);
 }
 
 .active-link h4{
-  color: rgb(255, 0, 0);
+  color: rgb(8, 2, 2);
 }
 
 h4 {
@@ -41,7 +41,20 @@ h4 {
 
 h4:hover {
   font-size: 28px; 
-  color: #fff200; 
+  color: #0e0e0e; 
 }
 
+button {
+  background-color: #e82525;
+  border: .5px solid rgb(13, 14, 8);
+  border-radius: 15px;
+  font-size: 25px;
+  color: #fff;
+  padding: 8px;
+  box-shadow: 0 0 30px 0 rgb(170, 210, 8),
+              0 0 30px 0 rgb(200, 9, 48),
+              0 0 10px 0 crimson inset;
 
+              width: 100px;
+              height: 60px;
+}
