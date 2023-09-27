@@ -101,14 +101,14 @@ export class ViewDoctorComponent {
         this.http.getAllDoctors().subscribe((data: any) => {
           this.doctors = data;
         });
-        Swal.fire('Successfully Updated', '', 'success')
+        Swal.fire('Successfully Deleted', '', 'success')
         //  console.log(data)
       },
       (error) => {
         //In case of error
 
 
-        Swal.fire('Failed to Update', '', 'error')
+        Swal.fire('Failed to Delete', '', 'error')
       }
     )
   }

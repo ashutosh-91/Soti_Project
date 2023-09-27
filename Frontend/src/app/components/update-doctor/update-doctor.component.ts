@@ -13,13 +13,14 @@ import Swal from 'sweetalert2';
 export class UpdateDoctorComponent {
   // textMessage=''
   // alertClass=''
+  loading=false;
   doctorModel=new Doctor();
   constructor(private dataService:DataService,private activatedRoute:ActivatedRoute, private router:Router){
     this.doctorModel.DoctorId=Number(this.activatedRoute.snapshot.paramMap.get('docId'));
   }
  
   updateDoctor(){
-
+    this.loading=true;
     console.log(this.doctorModel);
     this.dataService.updateDoctor(this.doctorModel).subscribe(
       (response) => {
@@ -27,12 +28,15 @@ export class UpdateDoctorComponent {
         // this.textMessage = 'Updated successfully right now';
         // this.alertClass = 'alert alert-success';
         // console.log(this.textMessage);
+    this.loading=false;
 
         Swal.fire('Successfully Updated','','success')
-        this.router.navigate(['/home']);
+        this.router.navigate(['/doctor']);
       },
 
       (error) => {
+    this.loading=false;
+        
         //In case of error
         // this.textMessage = 'Some error occured';
         // this.alertClass = 'alert alert-danger';
