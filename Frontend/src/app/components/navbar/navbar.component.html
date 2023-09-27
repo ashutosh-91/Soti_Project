@@ -1,5 +1,5 @@
 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><h1>CureWell</h1></a>
+    <a class="navbar-brand" routerLink="/home"><h1>CureWell</h1></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
         (click)="toggleCollapsed()">
@@ -9,7 +9,7 @@
     <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link h5" routerLink="/home" routerLinkActive="active-link">
+                <a class="nav-link h5" routerLink="/doctor" routerLinkActive="active-link">
                     <h4>View Doctors</h4><span class="sr-only">(current)</span>
                 </a>
             </li>

@@ -9,9 +9,11 @@ import { AddDoctorComponent } from './components/add-doctor/add-doctor.component
 import { RegistrationPageComponent } from './pages/registration-page/registration-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { AuthGuard } from './gaurd/auth.guard';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 const routes: Routes=[{path:'', redirectTo: 'home', pathMatch: 'full'},
-{ path: 'home', component: ViewDoctorComponent,  canActivate: [AuthGuard] },
+{ path: 'home', component: HomePageComponent,  canActivate: [AuthGuard] },
+{ path: 'doctor', component: ViewDoctorComponent,  canActivate: [AuthGuard] },
 { path: 'doctor/:docId', component: UpdateDoctorComponent, canActivate: [AuthGuard] },
 { path: 'specialization', component: ViewSpecializationComponent },
 { path: 'specialization/:specializationCode', component: ViewDoctorComponent, canActivate: [AuthGuard] },

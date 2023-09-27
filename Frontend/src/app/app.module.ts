@@ -18,6 +18,7 @@ import { ViewSpecializationComponent } from './components/view-specialization/vi
 import { ViewTodaysSurgeryComponent } from './components/view-todays-surgery/view-todays-surgery.component';
 import {  HttpClientModule } from "@angular/common/http";
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { FooterComponent } from './components/footer/footer.component';
     LoginPageComponent,
     RegistrationPageComponent,
     FooterComponent,
+    HomePageComponent,
 
   ],
   imports: [
