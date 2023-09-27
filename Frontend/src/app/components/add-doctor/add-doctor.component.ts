@@ -38,7 +38,7 @@ export class AddDoctorComponent {
         // this.alertClass = 'alert alert-success';
         // console.log(this.textMessage);
         Swal.fire('Successfully Inserted','','success')
-        this.router.navigate(['/home']);
+        this.router.navigate(['/doctor']);
       },
 
       (error) => {

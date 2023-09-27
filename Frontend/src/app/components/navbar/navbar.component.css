@@ -29,7 +29,7 @@ h4 {
 }
 
 .active-link h4{
-  color: rgb(255, 0, 0);
+  color: white;
 }
 
 h4 {
@@ -41,7 +41,7 @@ h4 {
 
 h4:hover {
   font-size: 28px; 
-  color: #fff200; 
+  color: white; 
 }
 
 
